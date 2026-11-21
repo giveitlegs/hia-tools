@@ -1,4 +1,4 @@
-/* Inspector Atlas breadcrumbs: Atlas > State > City (> Service) on flat category URLs. */
+/* Inspector Atlas breadcrumbs v3: Atlas > State > City (> Service) on flat category URLs and listings. */
 (function(){
 var SITE=location.origin,MAP=null,DONE=false;
 function slugOf(h){try{var u=new URL(h,SITE);if(u.origin!==SITE)return null;var s=u.pathname.split("/").filter(Boolean);return s.length===1?s[0]:null}catch(e){return null}}
@@ -11,14 +11,28 @@ function apply(){
  for(var i=0;i<links.length;i++){var s=slugOf(links[i].getAttribute("href"));if(s&&MAP.p[s]){target=s;before=links[i];break}}
  if(!target&&here&&MAP.p[here]){target=here;before=n.lastElementChild}
  var chain;
- if(!target&&cur[0]==="listings"){
-  /* listing: platform crumb is Atlas > State > Listing; add the city page that this listing's content links to */
-  var st=null,stEl=null;links.forEach(function(a){var s=slugOf(a.getAttribute("href"));if(s&&!st){st=s;stEl=a}});
-  var pf=[].slice.call(document.querySelectorAll(".hia-prefooter-links a"));
-  for(var q=0;q<pf.length&&st;q++){var cs=slugOf(pf[q].getAttribute("href"));if(cs&&MAP.p[cs]&&MAP.p[cs].length===1&&MAP.p[cs][0]===st&&/^home-inspectors-/.test(cs)){
-    target=st;before=stEl.nextSibling;MAP.l[cs]=MAP.l[cs]||pf[q].textContent.replace(/^Home inspectors in /,"");chain=[cs];break}}
-  if(target){DONE=true;var after=stEl;var s1=sep(n),a1=document.createElement("a");a1.href=SITE+"/"+chain[0]+"/";a1.className=stEl.className;a1.textContent=MAP.l[chain[0]];
-   after.parentNode.insertBefore(s1,after.nextSibling);s1.parentNode.insertBefore(a1,s1.nextSibling);fixLD(st,chain,true);return}
+ if(cur[0]==="listings"){
+  /* listing: the platform crumb uses the listing's alphabetically-first category (often a national service page).
+     Replace everything between Atlas and the listing name with State > City, taken from the listing's own
+     pre-footer link to its city page (city -> state comes from the map). Same rewrite for BreadcrumbList. */
+  var pf=[].slice.call(document.querySelectorAll(".hia-prefooter-links ul:first-of-type a")),cs=null,cl=null;
+  for(var q=0;q<pf.length;q++){var c0=slugOf(pf[q].getAttribute("href"));if(c0&&/^home-inspectors-/.test(c0)&&MAP.p[c0]&&MAP.p[c0].length===1){cs=c0;cl=pf[q].textContent.replace(/^Home inspectors in /,"");break}}
+  var st=cs?MAP.p[cs][0]:null;
+  if(!st)for(var q2=0;q2<pf.length;q2++){var s0=slugOf(pf[q2].getAttribute("href"));if(s0&&/^home-inspectors-/.test(s0)&&MAP.l[s0]&&!MAP.p[s0]){st=s0;break}}
+  if(!st)return;
+  var home=n.querySelector("a"),last=n.lastElementChild;if(!home||!last||last===home)return;
+  DONE=true;if(cs)MAP.l[cs]=MAP.l[cs]||cl;var trail=cs?[st,cs]:[st];
+  var proto=sep(n),cls=(links[0]||home).className;
+  var node=home.nextSibling;while(node&&node!==last){var nx=node.nextSibling;node.parentNode.removeChild(node);node=nx}
+  trail.forEach(function(k){var a=document.createElement("a");a.href=SITE+"/"+k+"/";a.className=cls;a.textContent=MAP.l[k]||k;
+   n.insertBefore(proto.cloneNode(true),last);n.insertBefore(a,last)});
+  n.insertBefore(proto.cloneNode(true),last);
+  [].forEach.call(document.querySelectorAll('script[type="application/ld+json"]'),function(sc){
+   try{var o=JSON.parse(sc.textContent);if(o["@type"]!=="BreadcrumbList")return;var it=o.itemListElement||[];if(it.length<2)return;
+    var mid=trail.map(function(k){return{"@type":"ListItem",name:MAP.l[k]||k,item:SITE+"/"+k+"/"}});
+    o.itemListElement=[it[0]].concat(mid,[it[it.length-1]]);o.itemListElement.forEach(function(x,p){x.position=p+1});
+    o.itemListElement[0].name="Atlas";sc.textContent=JSON.stringify(o)}catch(e){}});
+  return;
  }
  rootLD();
  if(!target)return;DONE=true;
