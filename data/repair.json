@@ -1,0 +1,35 @@
+{
+  "last_checked": "2026-11-21",
+  "note": "Common defect phrasing written by Inspector Atlas. Edit each line to match the wording and page number in your own inspection report.",
+  "groups": [
+    ["Safety", [
+      "Missing GFCI protection at kitchen, bathroom, garage or exterior outlets",
+      "Double-tapped breakers and open knockouts in the main electrical panel",
+      "Missing or inoperable smoke and carbon monoxide alarms",
+      "Loose stair handrail and guard balusters spaced more than 4 inches apart",
+      "Garage door opener does not reverse when the safety sensor is blocked",
+      "Water heater temperature/pressure relief discharge pipe missing or improperly terminated",
+      "Gas appliance venting disconnected or improperly sloped"
+    ]],
+    ["Roof and exterior", [
+      "Damaged, lifted or missing roof shingles",
+      "Failed or missing flashing at the chimney or roof-to-wall joints",
+      "Deck ledger board not bolted or flashed",
+      "Wood rot at exterior trim, fascia or door frames",
+      "Negative grading directing water toward the foundation"
+    ]],
+    ["Structure and moisture", [
+      "Active water intrusion in the basement or crawlspace",
+      "Soft or water-damaged subfloor",
+      "Evidence of wood-destroying insect activity or damage",
+      "Torn or missing crawlspace vapor barrier"
+    ]],
+    ["Systems", [
+      "Active plumbing leak under a sink or at a toilet",
+      "Heating system did not respond to the thermostat",
+      "Air conditioning system not cooling adequately; evaluation by an HVAC contractor recommended",
+      "Bathroom exhaust fan vents into the attic",
+      "Sewer line defects found by camera inspection"
+    ]]
+  ]
+}

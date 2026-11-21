@@ -1,0 +1,271 @@
+{
+  "dataset": "florida",
+  "last_checked": "2026-11-21",
+  "notes": [
+    "The current form is OIR-B1-1802 (Rev. 04/26), adopted by Rule 69O-170.0155. It is required for inspections completed on or after 04/01/2026. It has 9 numbered questions, not 7: 'Region' (2) and 'Roof Slope' (3) were added, and the old questions 2-7 moved to 4-9. Each item below carries 'legacy_q_0112', its number on the superseded Rev. 01/12 form.",
+    "Option labels are transcribed from the Rev. 04/26 form text, from a copy hosted by InterNACHI and cross-checked against Citizens' Wind Loss Mitigation Guide for Rev. 04/26. The floir.gov forms page itself was not fetched.",
+    "Credit notes are qualitative. They come from s. 627.0629(1), F.S., and from how Citizens Property Insurance maps each answer in its systems, per the Citizens Wind Loss Mitigation Guide, Rev. 04/26, v.03182026. No official statewide dollar or percentage table was found for Rev. 04/26. Private carriers file their own discount factors with OIR, so credits vary by insurer.",
+    "Footer on every page of the form: 'This verification form is valid for up to five (5) years provided no material changes have been made to the structure or inaccuracies found on the form. Some items listed may not qualify for a discount.'"
+  ],
+  "form": {
+    "id": "OIR-B1-1802",
+    "name": "Uniform Mitigation Verification Inspection Form",
+    "revision": "Rev. 04/26",
+    "adopted_by": "Rule 69O-170.0155, F.A.C.",
+    "required_for_inspections_on_or_after": "2026-04-01",
+    "prior_revision": "Rev. 01/12. Citizens still accepts a valid 01/12 form completed within 5 years of the inspection date.",
+    "validity_years": 5,
+    "validity_text": "This verification form is valid for up to five (5) years provided no material changes have been made to the structure or inaccuracies found on the form.",
+    "photo_rule": "At least one photograph or document providing proof must accompany this form to validate each attribute marked in questions 2 through 9. A FORTIFIED Home Roof, Silver, or Gold Certificate may be used to validate the attributes marked in questions 4 through 6, and questions 8 through 9.",
+    "source_url": "https://s3.amazonaws.com/uploads-east-1.nachi.org/page-uploads/2026/04/1776281243142-florida-oir-1802-wind-mitigation-2026.pdf",
+    "verify": false
+  },
+  "questions": [
+    {
+      "q": 1,
+      "legacy_q_0112": 1,
+      "key": "building_code",
+      "title": "Building Code: What version of the Florida Building Code \"FBC\" (FBC 2001 & 2004 OR FBC 2007 or later) OR for homes located in the High-Velocity Hurricane Zone (\"HVHZ\") (Miami-Dade or Broward counties), South Florida Building Code (SFBC-94) was in force at the time of original permit application?",
+      "options": [
+        {"code": "A", "label": "Code in force at time of permit application was the FBC 2001 & 2004. For homes built in 2002/2003, provide a permit application with a date after 3/1/2002.", "credit_note": "Homes permitted under the FBC (2002 and later) usually get building-code credits. Citizens says many mitigation features for these homes are already built into the base rate for the year built, so separate feature credits may show as 'Not Applicable'."},
+        {"code": "B", "label": "Code in force at time of permit application was the FBC 2007 and later. For homes built in 2007/2008, provide a permit application with a date after 12/8/2006.", "credit_note": "Same as A: code-built homes usually get FBC-based credits. B is new on Rev. 04/26. Citizens' systems don't need the specific 2007 code, but the form must still note 2007/2008 builds and include the permit date."},
+        {"code": "C", "label": "For the HVHZ Only: Code in force at time of permit application was the SFBC-94. For homes built in 1994, 1995, and 1996, provide a permit application with a date after 9/1/1994.", "credit_note": "Treated as code-equivalent for Miami-Dade and Broward homes. The permit date is needed for 1994-1996 builds."},
+        {"code": "D", "label": "Unknown or does not meet the requirements of Answer \"A\" or \"B\" or \"C\".", "credit_note": "No building-code discount. Citizens: 'FBC discounts are not applied when D is selected.' Individual features can still earn credits through questions 4-9."}
+      ]
+    },
+    {
+      "q": 2,
+      "legacy_q_0112": null,
+      "key": "region",
+      "title": "Region: Location based on design windspeed. See ASCE 7-22 (700-year MRI) Risk Category 2 (www.ascehazardtool.org).",
+      "options": [
+        {"code": "HVHZ", "label": "HVHZ", "credit_note": "New on Rev. 04/26. Region places the home in a rating territory rather than earning a credit by itself. Citizens has no Region field; it maps loosely to its FBC Wind Speed / Wind Design fields."},
+        {"code": "R1", "label": "Region 1 (≥ 140 mph)", "credit_note": "Classification only; not a credit by itself."},
+        {"code": "R2", "label": "Region 2 (130 mph – 139 mph)", "credit_note": "Classification only; not a credit by itself."},
+        {"code": "R3", "label": "Region 3 (< 130 mph)", "credit_note": "Classification only; not a credit by itself."}
+      ]
+    },
+    {
+      "q": 3,
+      "legacy_q_0112": null,
+      "key": "roof_slope",
+      "title": "Roof Slope: For single-family homes with multiple slopes, indicate the slope that is at least two thirds of the main roof area when determining greater than or equal to 6:12, OR less than 6:12.",
+      "options": [
+        {"code": "GE_6_12", "label": "Greater than or equal to (≥ 6:12)", "credit_note": "New on Rev. 04/26. Citizens: 'roof slope does not impact credits or discounts.' It is used in replacement-cost estimating."},
+        {"code": "LT_6_12", "label": "Less than (< 6:12).", "credit_note": "No credit impact at Citizens."}
+      ]
+    },
+    {
+      "q": 4,
+      "legacy_q_0112": 2,
+      "key": "roof_covering",
+      "title": "Roof Covering: Select all roof covering types in use. Provide the permit application date OR FBC/MDC Product Approval number AND Year of Original Installation/Replacement OR indicate that no information was available to verify compliance for each roof covering identified.",
+      "covering_types": ["Asphalt/Fiberglass Shingle", "Concrete/Clay Tile", "Synthetic/Composite Tile", "Metal", "Built Up", "Membrane", "Other"],
+      "subquestion": "4.2 Product Approval Listing",
+      "options": [
+        {"code": "A", "label": "All roof coverings listed above meet the FBC with a FBC or Miami-Dade Product Approval listing current at the time of installation OR have a roofing permit application date on or after 3/1/02 OR the roof is original and built in 2004 or later.", "credit_note": "Usually earns the roof-cover credit. Citizens enters A as 'FBC Equivalent'. Every covering on the house must qualify, and product approval or permit documents must be attached."},
+        {"code": "B", "label": "All roof coverings have a Miami-Dade Product Approval listing current at time of installation OR (for the HVHZ only) a roofing permit application after 9/1/1994 and before 3/1/2002 OR the roof is original and built in 1997 or later.", "credit_note": "Usually earns the roof-cover credit. Citizens enters B as 'FBC Equivalent'."},
+        {"code": "C", "label": "One or more roof coverings do not meet the requirements of Answer \"A\" or \"B.\"", "credit_note": "No roof-cover credit. Citizens enters C as 'Non-FBC Equivalent. Note: No credit will be granted.'"},
+        {"code": "D", "label": "No roof coverings meet the requirements of Answer \"A\" or \"B.\"", "credit_note": "No roof-cover credit (Non-FBC Equivalent at Citizens)."}
+      ]
+    },
+    {
+      "q": 5,
+      "legacy_q_0112": 3,
+      "key": "roof_deck_attachment",
+      "title": "Roof Deck Attachment: What is the WEAKEST form of roof deck attachment?",
+      "options": [
+        {"code": "A", "label": "Plywood/Oriented strand board (OSB) roof sheathing with minimum thickness of 7/16\" attached to the roof truss/rafter (spaced a maximum of 24\" o.c.) by staples or 6d nails spaced at 6\" along the edge and 12\" in the field. OR Batten decking supporting wood shakes or wood shingles (max 24\" truss/rafter spacing). OR Any system of screws, nails, adhesives, other deck fastening system or truss/rafter spacing that has an equivalent mean ultimate uplift resistance of at least 55 psf, but less than that required for Options B or C below.", "credit_note": "Weakest rated level (at least 55 psf). Usually little or no deck credit. Citizens maps it to its own Level A."},
+        {"code": "B", "label": "Plywood/OSB roof sheathing with a minimum thickness of 7/16\" attached to the roof truss/rafter (spaced a maximum of 24\" o.c.) by 8d common nails spaced a maximum of 12\" in the field. OR Any system ... that is shown to have an equivalent or greater resistance than 8d nails spaced a maximum of 12\" in the field (max 24\" truss/rafter spacing) or has a mean ultimate uplift resistance of at least 103 psf.", "credit_note": "Middle level (at least 103 psf). Usually earns a moderate deck credit on pre-2002 homes."},
+        {"code": "C", "label": "Plywood/OSB roof sheathing with a minimum thickness of 7/16\" attached to the roof truss/rafter (spaced a maximum of 24\" o.c.) by 8d common nails spaced a maximum of 6\" in the field. OR Dimensional lumber/Tongue & Groove decking with a minimum of 2 nails per board (or 1 nail per board if each board is equal to or less than 6\" in width). OR Any system ... equivalent or greater resistance than 8d common nails spaced a maximum of 6\" in the field (max 24\" truss/rafter spacing) or has a mean ultimate uplift resistance of at least 182 psf.", "credit_note": "Strongest wood-deck level (at least 182 psf). Usually the best deck-attachment credit. A current FORTIFIED Roof, Silver or Gold certificate is entered as Level C at Citizens."},
+        {"code": "D", "label": "Reinforced Concrete Roof Deck.", "credit_note": "Treated as a top-tier deck. Citizens enters it as 'Reinforced Concrete Roof Deck', which also changes how roof-to-wall and SWR are entered."},
+        {"code": "E", "label": "Spray foam products with an uplift resistance of 110 PSF (FOS 1.5). (Spray foam must be installed along rafter deck intersections, all panel joints, etc.).", "credit_note": "New on Rev. 04/26. Citizens enters spray foam as Level B."},
+        {"code": "F", "label": "Other: ____", "credit_note": "No deck credit. Citizens enters F as 'Unknown or Unidentified'."},
+        {"code": "G", "label": "Unknown or unidentified.", "credit_note": "No deck credit."},
+        {"code": "H", "label": "No attic access.", "credit_note": "No deck credit (Unknown or Unidentified at Citizens)."}
+      ]
+    },
+    {
+      "q": 6,
+      "legacy_q_0112": 4,
+      "key": "roof_to_wall",
+      "title": "Roof to Wall Attachment: What is the WEAKEST roof to wall connection? (Do not include attachment of hip/valley jacks within five (5) feet of the inside or outside corner of the roof in determination of WEAKEST type).",
+      "minimal_conditions_note": "Options B, C and D require at least one of three minimal conditions on the form: proper nailing, a strap wrapped over the truss with 3 nails each side, or purpose-made connectors installed to the manufacturer's specifications. All retrofit connectors must meet option 3.",
+      "options": [
+        {"code": "A", "label": "Toenails: Truss/rafter anchored to top plate of wall using nails driven at an angle through the truss/rafter and attached to the top plate of the wall, OR Metal connectors or structural fasteners that are not installed as intended do not meet the minimal conditions or requirements of B, C, or D, OR Other connection method documented to provide a substantiated wind allowable uplift capacity of 185 lbs. or greater.", "credit_note": "Weakest connection. Usually no roof-to-wall credit."},
+        {"code": "B", "label": "Clips: Metal connectors that do not wrap over the truss/rafter, OR Metal connectors with a minimum of one (1) strap that wraps over the truss/rafter and does not meet the nail position requirements of C or D but is secured with a minimum of three (3) nails, OR Purpose-made metal connector(s) or structural fastener(s) with a substantiated wind allowable uplift capacity of 386 lbs. or greater installed per the manufacturer's installation specifications (requires site-specific documentation).", "credit_note": "Usually earns a roof-to-wall credit on older homes. A current FORTIFIED Gold certificate is entered as Clips at Citizens unless the inspection shows wraps."},
+        {"code": "C", "label": "Single Wraps: Metal connectors consisting of a single strap that wraps over the truss/rafter and are secured with a minimum of two (2) nails on one side and a minimum of one (1) nail on the opposing side, OR Purpose-made metal connector(s) or structural fastener(s) with a substantiated wind allowable uplift capacity of 535 lbs. or greater installed per the manufacturer's installation specifications (requires site-specific documentation.)", "credit_note": "Usually a larger credit than clips. Citizens counts single wraps even on homes built on or after 1/1/2002, where weaker connections are entered as 'Not Applicable'."},
+        {"code": "D", "label": "Double Wraps: Metal Connectors consisting of two (2) separate straps, one on either side of the truss/rafter where each strap wraps over the truss/rafter and is secured with a minimum of two (2) nails on one side, and a minimum of one (1) nail on the opposing side, OR Metal connectors consisting of a single strap that wraps over the truss/rafter, are secured to the side of the wall and/or bottom of the top plate with a minimum of three (3) nails on each side, OR Purpose-made metal connector(s) or structural fastener(s) with a substantiated wind allowable uplift capacity of 891 lbs. or greater installed per the manufacturer's installation specifications (requires site-specific documentation).", "credit_note": "Strongest strap connection. Usually the best roof-to-wall credit."},
+        {"code": "E", "label": "Structural: Anchor bolts structurally connected or reinforced concrete roof.", "credit_note": "Structural connection. With a reinforced concrete deck, Citizens enters it as 'Not Applicable' because the deck rating already covers it."},
+        {"code": "F", "label": "Other: ____", "credit_note": "No credit (Unknown or Unidentified at Citizens)."},
+        {"code": "G", "label": "Unknown or unidentified.", "credit_note": "No credit."},
+        {"code": "H", "label": "No attic access.", "credit_note": "No credit (Unknown or Unidentified at Citizens)."},
+        {"code": "I", "label": "Connection(s) not installed as intended.", "credit_note": "New on Rev. 04/26. No credit (Unknown or Unidentified at Citizens)."}
+      ]
+    },
+    {
+      "q": 7,
+      "legacy_q_0112": 5,
+      "key": "roof_geometry",
+      "title": "Roof Geometry: What is the roof shape? (Do not consider roofs of porches or carports that are attached only to the fascia or wall of the host structure over unenclosed space in the determination of roof perimeter or roof area for roof geometry classification).",
+      "options": [
+        {"code": "A", "label": "Hip Roof: Hip roof with no other roof shapes greater than 10% of the total roof system perimeter.", "credit_note": "Usually one of the larger, easier credits. Citizens: 'A mitigation discount applies to hip roofs due to the reduced uplift pressure it provides.' Citizens accepts clear photos without a full inspection when only the hip credit is requested."},
+        {"code": "B", "label": "Flat Roof: Roof on a building with five (5) or more units where at least 90% of the main roof area has a roof slope of less than 2:12.", "credit_note": "Applies only to buildings with 5 or more units. Not relevant to single-family homes."},
+        {"code": "C", "label": "Other Roof: Any roof that does not qualify as either (A) or (B) above.", "credit_note": "No geometry credit. Gable roofs fall here."}
+      ]
+    },
+    {
+      "q": 8,
+      "legacy_q_0112": 6,
+      "key": "secondary_water_resistance",
+      "title": "Sealed Roof Deck/Secondary Water Resistance (SWR): Applied as a supplemental means to protect the dwelling from water intrusion in the event of roof covering loss. Standard underlayment or hot-mopped felts do not qualify as an SWR.",
+      "options": [
+        {"code": "A", "label": "Sealed Roof Deck (also called SWR): Fully adhered polymer-modified bitumen roofing underlayment complying with ASTM D1970; OR Tape over roof deck seams with felt or synthetic (min. 3.75-inch-wide strip of self-adhering membrane complying with ASTM D1970 or flashing tape complying with AAMA 711, Level 3); OR Double layer of felt or synthetic with no tape (two layers of ASTM D226 Type II, ASTM D4869 Type III or Type IV or ASTM D8257 underlayment); OR Spray foam products.", "credit_note": "Usually earns an SWR credit (entered as 'SWR' at Citizens). It is often hidden on a finished roof, so photos, permits or a FORTIFIED certificate are needed. Rev. 04/26 added the qualifying methods listed here."},
+        {"code": "B", "label": "No Sealed Roof Deck.", "credit_note": "No SWR credit."},
+        {"code": "C", "label": "Unknown or undetermined.", "credit_note": "No SWR credit."}
+      ]
+    },
+    {
+      "q": 9,
+      "legacy_q_0112": 7,
+      "key": "opening_protection",
+      "title": "Opening Protection: What is the WEAKEST form of wind-borne debris protection installed on the structure? This category includes all openings in the wall and roof including windows, doors, sliding glass doors, skylights, and garage doors. Gable roof vents and other roof vents are not included. All openings (windows, doors, and skylights) must be in good condition. Buildings with openings that need replacement do not qualify for wind mitigation rate differentials, regardless of the presence/absence of other features.",
+      "level_chart": {
+        "N/A": "Not applicable – there are no openings of this type on the structure",
+        "A": "Verified cyclic pressure & large missile (9 lb. for windows, doors/4.5 lb. for skylights)",
+        "B": "Verified cyclic pressure & large missile (4-8 lb. for windows, doors/2 lb. for skylights)",
+        "C": "Verified plywood/OSB meeting Table 1609.1.2 of the FBC 2007",
+        "D": "Verified Non-Glazed Entry or Garage Doors indicating compliance with ASTM E 330, ANSI/DASMA 108, or PA/TAS 202 for wind pressure resistance",
+        "N": "Opening Protection products that appear to be A or B but are not verified; Other protective coverings that cannot be identified as A, B, or C",
+        "X": "No Windborne Debris Protection",
+        "Z": "Damaged openings in need of repair/replacement"
+      },
+      "options": [
+        {"code": "A", "label": "Exterior Openings Cyclic Pressure and 9-lb. Large Missile (4.5 lb. for skylights only): All glazed openings are protected, at a minimum, with impact resistant coverings or products listed as wind borne debris protection devices in the product approval system of the State of Florida or Miami-Dade County (Miami-Dade PA 201/202/203; FBC TAS 201/202/203; ASTM E 1886 and E 1996; SSTD 12; skylights ASTM E 1886/E 1996; garage doors ANSI/DASMA 115).", "sub_options": {"A.1": "All non-glazed openings classified as A in the table above, or no non-glazed openings exist.", "A.2": "One or more non-glazed openings classified as Level D in the table above, and no non-glazed openings classified as Level B, C, N, or X in the table above.", "A.3": "One or more non-glazed openings is classified as Level B, C, N, or X in the table above."}, "credit_note": "Usually the largest single wind-mitigation credit (Hurricane/Class A protection). At Citizens, A.1 qualifies everywhere. A.2 and A.3 qualify only outside the HVHZ; inside the HVHZ they are entered as 'None'."},
+        {"code": "B", "label": "Exterior Opening Protection – Cyclic Pressure and 4 to 8-lb. Large Missile (2-4.5 lb. for skylights only): All glazed openings are protected, at a minimum, with impact resistant coverings or products listed as windborne debris protection devices ... (ASTM E 1886 and E 1996 Large Missile 4.5 lb.; SSTD 12 Large Missile 4 lb. to 8 lb.; skylights 2 to 4.5 lb.).", "sub_options": {"B.1": "All non-glazed openings classified as A or B in the table above, or no non-glazed openings exist.", "B.2": "One or more non-glazed openings classified as Level D in the table above, and no non-glazed openings classified as Level C, N, or X in the table above.", "B.3": "One or more non-glazed openings is classified as Level C, N, or X in the table above."}, "credit_note": "Usually a meaningful but smaller credit than A (Intermediate/Basic, Class B). Citizens: no premium discount for Class B inside the HVHZ."},
+        {"code": "C", "label": "Exterior Opening Protection – Wood Structural Panels meeting FBC 2007: All glazed openings are covered with plywood OR OSB, meeting the requirements of Table 1609.1.2 of the FBC 2007.", "sub_options": {"C.1": "All non-glazed openings classified as A, B, or C in the table above, or no non-glazed openings exist.", "C.2": "One or more non-glazed openings classified as Level D in the table above, and no non-glazed openings classified as Level N or X in the table above.", "C.3": "One or more non-glazed openings is classified as Level N or X in the table above."}, "credit_note": "Citizens: 'Discounts are not applied when C. Wood Panels is indicated.' Panels can still satisfy Citizens' insurability rules for opening protection in the wind-borne debris region. Other carriers may treat them differently."},
+        {"code": "N", "label": "Exterior Opening Protection (unverified shutter systems with no documentation): All glazed openings are protected with protective coverings not meeting the requirements of Answer \"A,\" \"B,\" or \"C\" or systems that appear to meet Answer \"A\" or \"B\" with no documentation of compliance.", "sub_options": {"N.1": "All non-glazed openings classified as Level A, B, C, or N in the table above, or no non-glazed openings exist.", "N.2": "One or more non-glazed openings classified as Level D in the table above, and no non-glazed openings classified as Level X in the table above.", "N.3": "One or more non-glazed openings is classified as Level X in the table above."}, "credit_note": "No opening-protection credit at Citizens (entered as 'None'). Finding the product approval or test documentation can move the answer to A or B."},
+        {"code": "X", "label": "None or Some Glazed Openings: One or more glazed openings classified. (Level X in the table above and None in the factor table).", "credit_note": "No opening-protection credit. One unprotected glazed opening is enough to fail this category."},
+        {"code": "Z", "label": "Damaged Openings: One or more openings are damaged and in need of repair or replacement. (Any opening(s) meeting Level Z in the table above).", "credit_note": "New on Rev. 04/26. Disqualifies opening-protection credit regardless of other protection. Citizens requires the repair and a new form before credit is applied."}
+      ]
+    }
+  ],
+  "credit_basis": {
+    "statute": "s. 627.0629(1), Florida Statutes (2026)",
+    "summary": "Residential property rate filings must include actuarially reasonable discounts, credits, other rate differentials, or appropriate deductible reductions for properties built with, or retrofitted with, features that reduce windstorm loss. Listed features include wind uplift prevention, roof strength, roof covering performance, roof-to-wall strength, wall-to-floor-to-foundation strength, opening protection, and window, door and skylight strength. Credits for features that meet minimum FBC requirements must be included. OIR determines discount values reflecting the full actuarial value. Since 10/1/2023, insurers must post their hurricane mitigation discounts on their websites. OIR must re-evaluate the features and discount values on or before 1/1/2025 and every 5 years after.",
+    "insurer_notice": "s. 627.711(1), F.S. requires insurers to notify policyholders of available windstorm mitigation discounts on an OIR-prescribed form at issuance and each renewal. The form and each insurer's approved discount ranges must be available online from DFS or OIR.",
+    "carrier_variation": "Each insurer files its own mitigation factors. Citizens' treatment above is one carrier's mapping, and private carriers may weight features differently. No statewide percentage table for Rev. 04/26 was found, so no dollar or percentage amounts are given.",
+    "sources": [
+      "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699/0627/Sections/0627.0629.html",
+      "https://training.citizensfla.com/lms/courses/core/CIS_Resources/Job_Aids/PolicyCenter/Wind_Loss_Mitigation_Guide_Rev0426.pdf"
+    ]
+  },
+  "qualified_inspectors": {
+    "statute": "s. 627.711(2), Florida Statutes",
+    "list": [
+      "Home inspector licensed under s. 468.8314, F.S., who has completed the statutory number of hours of hurricane mitigation training approved by the Construction Industry Licensing Board and completion of a proficiency exam (statute: at least 3 hours)",
+      "Building code inspector certified under s. 468.607, F.S.",
+      "General, building, or residential contractor licensed under s. 489.111, F.S.",
+      "Professional engineer licensed under s. 471.015, F.S.",
+      "Professional architect licensed under s. 481.213, F.S.",
+      "Any other individual or entity recognized by the insurer as possessing the necessary qualifications to properly complete a uniform mitigation verification form"
+    ],
+    "personal_inspection_rule": "Signers other than licensed contractors (s. 489.111) and professional engineers (s. 471.015) must inspect personally. Contractors and engineers may authorize a direct employee with the requisite skill, knowledge and experience, and they remain directly liable for that employee's work.",
+    "fraud_note": "Knowingly providing a false or fraudulent mitigation verification form to obtain a discount is a first-degree misdemeanor (s. 627.711(7), F.S.).",
+    "citizens_note": "Citizens grants no mitigation credits if the form is completed by an unqualified or unlicensed inspector. It verifies licenses through DBPR.",
+    "sources": [
+      "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699/0627/Sections/0627.711.html",
+      "https://s3.amazonaws.com/uploads-east-1.nachi.org/page-uploads/2026/04/1776281243142-florida-oir-1802-wind-mitigation-2026.pdf"
+    ]
+  },
+  "validity": {
+    "years": 5,
+    "condition": "Valid provided no material changes have been made to the structure or inaccuracies found on the form.",
+    "statute_note": "s. 627.711 does not set the 5-year period itself; it directs the Financial Services Commission to provide guidance on how long results remain valid. The 5-year term is printed on the form, adopted by Rule 69O-170.0155.",
+    "citizens_note": "Citizens accepts a valid Rev. 01/12 form completed within 5 years. Any inspection completed on or after 4/1/2026 must use Rev. 04/26.",
+    "sources": [
+      "https://s3.amazonaws.com/uploads-east-1.nachi.org/page-uploads/2026/04/1776281243142-florida-oir-1802-wind-mitigation-2026.pdf",
+      "https://training.citizensfla.com/lms/courses/core/CIS_Resources/Job_Aids/PolicyCenter/Wind_Loss_Mitigation_Guide_Rev0426.pdf"
+    ]
+  },
+  "my_safe_florida_home": {
+    "statute": "s. 215.5586, F.S. (administered by the Florida Department of Financial Services)",
+    "max_grant_usd": 10000,
+    "timeline": [
+      {"date": "2025-08", "event": "Program reopened in August 2025 with $280 million in new 2025-26 funding. Total available was about $352 million including residual funds.", "source": "https://www.wusf.org/weather/2025-08-11/my-safe-florida-home-reopens-with-352m-in-funds-and-new-eligibility-requirements"},
+      {"date": "2026-02", "event": "Lawmakers proposed no new money for 2026, although the Governor had sought another $100 million. Reported: about $440 million still unspent, $173 million earmarked for about 17,340 homeowners. Eligibility narrowed to homesteaded homes or townhomes valued at $700,000 or less.", "source": "https://www.axios.com/local/tampa-bay/2026/02/23/my-safe-florida-home-lawmakers-funding"},
+      {"date": "2026 session", "event": "Reported: the 2026-27 budget reverts/re-appropriates about $405 million in unused funds ($378 million My Safe Florida Home, $27 million My Safe Florida Condominium).", "source": "https://floridapolitics.com/archives/800264-floridas-2026-sessions-deliver-wins-for-homeowners-as-budget-heads-to-governor/"},
+      {"date": "2026", "event": "WPTV reports leftover money from the prior year should keep grants available in 2026 with no new appropriation.", "source": "https://www.wptv.com/money/real-estate-news/my-safe-florida-home-program-has-money-left-from-last-year-to-keep-grants-flowing-in-2026"}
+    ],
+    "priority_note": "Reported priority order: low-income seniors (60+), then other low-income homeowners, then moderate-income homeowners. This comes from secondary coverage only.",
+    "status_as_of_last_checked": "Unconfirmed. Whether the application portal is open as of November 2026 could not be verified: mysafeflhome.com returned HTTP 503 and the Axios and Florida Politics articles were paywalled or blocked, so their figures come from search-result summaries.",
+    "verify": true,
+    "official_url": "https://mysafeflhome.com/"
+  },
+  "four_point": {
+    "what_it_covers": ["roof", "electrical", "plumbing", "HVAC"],
+    "citizens": {
+      "home_age_trigger": "Required for all property owner, dwelling and mobile home applications on homes more than 20 years old.",
+      "home_age_trigger_years": 20,
+      "form_name": "4-Point Inspection Form",
+      "form_revision": "Insp4pt 03 25",
+      "roof_form": "Roof Inspection Form (RCF-1 03 25)",
+      "form_revision_note": "Introduced by Citizens bulletin dated 03.20.25. Changes: TPR valve photo, licensed-electrician certification for single-strand aluminum remediation, split wood-stove and fireplace questions, piping age and PEX fields, expanded leak answers. No newer 2026 revision was found.",
+      "who_may_complete": "A Florida-licensed inspector. Citizens may reject the form if the appropriate professional did not perform the inspection or the license cannot be verified.",
+      "roof_rules": [
+        "Roofs older than 25 years (soft roofs such as shingle) or 50 years (hard roofs such as tile, slate, clay, concrete or metal) require documentation showing at least five years of remaining useful life.",
+        "If under five years remain, proof of a full-roof replacement is required before any policy is written.",
+        "Citizens' 2023 roof bulletin says the OIR-B1-1802, 4-Point and Roof Inspection forms are not acceptable proof of roof replacement."
+      ],
+      "hazards": "Serious hazards or deficiencies should be repaired before an application is submitted.",
+      "sources": [
+        "https://www.citizensfla.com/inspections",
+        "https://www.citizensfla.com/-/20250320-roof-and-4-point-inspection-form-updates",
+        "https://citizensfla.com/-/20230331-roof-rule-changes-1"
+      ],
+      "verify": false
+    },
+    "private_carriers": "Carriers vary. Most consumer and insurer sources put the home-age trigger at 20 years or older, and some carriers go higher (25-30 years) or lower. The Florida CFO/ICA guide says criteria are 'generally similar' with 'slight variations', and gives a roof example: at least 5 years remaining life required for roofs older than 15 years (shingle) or 20 years (tile/metal). Report validity also varies. The CFO guide says a 4-point generally must be dated within 30 days before the application, but 'each insurance company determines the acceptable timeframe'. Kin says most insurers treat a 4-point as valid for one year. Security First says insurers 'often' require one at 20 years and some act sooner. Slide says insurers may require one for homes over 20 years old. The CFO guide puts the standalone cost at typically $100-$300.",
+    "private_carrier_ranges": {
+      "home_age_trigger_years": {"min": 20, "max": 30, "note": "Most-cited trigger is 20+ years. 25-30 appears in some guides. Confirm with the specific carrier."},
+      "report_validity": {"min_days": 30, "max_days": 365, "note": "From 30 days (CFO/ICA guide, 'generally') to 1 year (Kin). The carrier decides."},
+      "cost_usd": {"min": 100, "max": 300, "source": "Florida CFO / Insurance Consumer Advocate four-point guide"}
+    },
+    "private_carrier_sources": [
+      "https://www.myfloridacfo.com/docs-sf/insurance-consumer-advocate-libraries/ica-documents/four-point-inspection-guide.pdf",
+      "https://www.securityfirstflorida.com/4-point-inspection",
+      "https://www.kin.com/blog/what-is-a-4-point-insurance-inspection/",
+      "https://www.slideinsurance.com/blog/what-is-a-4-point-inspection"
+    ],
+    "roof_age_rules": [
+      {"rule": "An insurer may not refuse to issue or refuse to renew a homeowner's policy insuring a residential structure with a roof that is less than 15 years old solely because of the age of the roof.", "cite": "s. 627.7011(5)(b), F.S."},
+      {"rule": "For a roof that is at least 15 years old, an insurer must allow a homeowner to have a roof inspection performed by an authorized inspector at the homeowner's expense before requiring the replacement of the roof as a condition of issuing or renewing a homeowner's insurance policy.", "cite": "s. 627.7011(5)(c), F.S."},
+      {"rule": "The insurer may not refuse to issue or refuse to renew a homeowner's insurance policy solely because of roof age if an inspection of the roof performed by an authorized inspector indicates that the roof has 5 years or more of useful life remaining.", "cite": "s. 627.7011(5)(c), F.S."},
+      {"rule": "Authorized inspector means an inspector approved by the insurer who is a licensed home inspector (s. 468.8314), certified building code inspector (s. 468.607), licensed general/building/residential contractor (s. 489.111) or roofing contractor, licensed professional engineer (s. 471.015), licensed architect (s. 481.213), or other individual or entity recognized by the insurer.", "cite": "s. 627.7011(5)(a), F.S."},
+      {"rule": "Roof age is calculated from the last date on which 100 percent of the roof's surface area was built or replaced under the code then in effect (or the initial date of a partial replacement when later partial replacements completed 100 percent).", "cite": "s. 627.7011(5)(d), F.S."},
+      {"rule": "Applies to homeowners' policies issued or renewed on or after July 1, 2022 (enacted by SB 2-A, 2022 Special Session A).", "cite": "s. 627.7011(5)(e), F.S."}
+    ],
+    "roof_age_rules_source": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699/0627/Sections/0627.7011.html"
+  },
+  "sources": [
+    {"name": "OIR-B1-1802 (Rev. 04/26) Uniform Mitigation Verification Inspection Form (copy hosted by InterNACHI)", "url": "https://s3.amazonaws.com/uploads-east-1.nachi.org/page-uploads/2026/04/1776281243142-florida-oir-1802-wind-mitigation-2026.pdf"},
+    {"name": "Citizens Property Insurance - Wind Loss Mitigation Guide for OIR-B1-1802 (Rev. 04/26), v.03182026", "url": "https://training.citizensfla.com/lms/courses/core/CIS_Resources/Job_Aids/PolicyCenter/Wind_Loss_Mitigation_Guide_Rev0426.pdf"},
+    {"name": "Florida Administrative Register reference - revision of Rule 69O-170.0155", "url": "https://flrules.org/Gateway/reference.asp?No=Ref-18852"},
+    {"name": "AAIS compliance alert - Florida amends Rule 69O-170.0155 (Mar 2026)", "url": "https://aaisviews.aaisonline.com/compliance-alerts/florida-amends-rule-69o-170.0155"},
+    {"name": "Florida Statutes s. 627.0629 - Residential property insurance; rate filings (mitigation discounts)", "url": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699/0627/Sections/0627.0629.html"},
+    {"name": "Florida Statutes s. 627.711 - Notice of premium discounts for hurricane loss mitigation; uniform mitigation verification inspection form", "url": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699/0627/Sections/0627.711.html"},
+    {"name": "Florida Statutes s. 627.7011 - Homeowners' policies (roof age rules, subsection 5)", "url": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0600-0699/0627/Sections/0627.7011.html"},
+    {"name": "Citizens - Inspections page", "url": "https://www.citizensfla.com/inspections"},
+    {"name": "Citizens bulletin 03.20.25 - Roof and 4-Point Inspection Form Updates", "url": "https://www.citizensfla.com/-/20250320-roof-and-4-point-inspection-form-updates"},
+    {"name": "Citizens bulletin - Roof rule changes (2023)", "url": "https://citizensfla.com/-/20230331-roof-rule-changes-1"},
+    {"name": "Florida CFO / Insurance Consumer Advocate - Four-Point Inspection guide", "url": "https://www.myfloridacfo.com/docs-sf/insurance-consumer-advocate-libraries/ica-documents/four-point-inspection-guide.pdf"},
+    {"name": "Security First Insurance - 4-point inspection", "url": "https://www.securityfirstflorida.com/4-point-inspection"},
+    {"name": "Kin Insurance - What is a 4-point inspection", "url": "https://www.kin.com/blog/what-is-a-4-point-insurance-inspection/"},
+    {"name": "Slide Insurance - What is a 4-point inspection", "url": "https://www.slideinsurance.com/blog/what-is-a-4-point-inspection"},
+    {"name": "WUSF - My Safe Florida Home reopens with $352M (Aug 2025)", "url": "https://www.wusf.org/weather/2025-08-11/my-safe-florida-home-reopens-with-352m-in-funds-and-new-eligibility-requirements"},
+    {"name": "Axios Tampa Bay - Lawmakers give no new money to home-hardening grant fund (Feb 2026)", "url": "https://www.axios.com/local/tampa-bay/2026/02/23/my-safe-florida-home-lawmakers-funding"},
+    {"name": "Florida Politics - 2026 Sessions deliver wins for homeowners as budget heads to Governor", "url": "https://floridapolitics.com/archives/800264-floridas-2026-sessions-deliver-wins-for-homeowners-as-budget-heads-to-governor/"},
+    {"name": "WPTV - My Safe Florida Home has money left from last year to keep grants flowing in 2026", "url": "https://www.wptv.com/money/real-estate-news/my-safe-florida-home-program-has-money-left-from-last-year-to-keep-grants-flowing-in-2026"},
+    {"name": "Insurance Journal - Florida's home hardening plan (Mar 2026)", "url": "https://www.insurancejournal.com/news/southeast/2026/03/19/862504.htm"}
+  ]
+}

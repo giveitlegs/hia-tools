@@ -1,0 +1,73 @@
+{
+  "last_checked": "2026-11-21",
+  "note": "Original sample written by Inspector Atlas for illustration. Fictional property; not copied from any inspector or software vendor.",
+  "sources": [
+    {"name": "InterNACHI Home Inspection Standards of Practice", "url": "https://www.nachi.org/sop.htm"},
+    {"name": "ASHI Standard of Practice for Home Inspections", "url": "https://www.homeinspector.org/standards-of-practice"}
+  ],
+  "property": {"address": "123 Sample Street, Anytown, USA (fictional)", "type": "Single-family, 2 stories", "built": "1987", "size": "2,150 sq ft", "foundation": "Vented crawlspace", "weather": "Clear, 68°F, dry for 3 days", "present": "Buyer, buyer's agent"},
+  "levels": [
+    ["safety", "Safety hazard", "Fix before move-in. A risk of injury, fire, shock or gas exposure."],
+    ["major", "Repair / replace", "Material defect. Get a licensed contractor's evaluation and quote."],
+    ["minor", "Maintenance", "Routine upkeep or a small repair."],
+    ["fyi", "Monitor / info", "Not a defect today. Note it and watch it."]
+  ],
+  "annotations": {
+    "summary": "The summary page is where most buyers start. It lists only the items the inspector judged material, grouped by severity. Read it first, then read the full section for each item.",
+    "scope": "Every report states what was inspected, what was not, and why (locked, unsafe, stored items). Items marked 'not inspected' are worth a follow-up.",
+    "photo": "Good reports include a photo for each defect, with an arrow or circle. A photo shows the issue to your agent, the seller and any contractor.",
+    "rec": "Read the recommendation line carefully. 'Evaluate by a licensed electrician' means the inspector found a symptom, not a full diagnosis. Get that evaluation before your contingency deadline."
+  },
+  "sections": [
+    {"k": "roof", "t": "Roof", "desc": "Architectural asphalt shingles, one layer. Viewed from the eaves with a ladder and by drone. Gutters: aluminum.",
+     "items": [
+      {"s": "major", "loc": "Rear slope above the kitchen", "obs": "Several shingles are creased and lifted, and two are missing. Exposed nail heads are visible.", "imp": "Wind-driven rain can get under lifted shingles and cause leaks and decking rot.", "rec": "Have a licensed roofing contractor repair the slope and check for hidden decking damage."},
+      {"s": "minor", "loc": "Front gutters", "obs": "Gutters are full of debris and overflow at the left downspout.", "imp": "Overflow puts water against the fascia and the foundation.", "rec": "Clean the gutters; consider gutter guards."},
+      {"s": "fyi", "loc": "Whole roof", "obs": "The covering shows normal granule wear for its age. The seller reported a 2012 installation.", "imp": "Some insurers ask for roof age and condition.", "rec": "Budget for replacement in the coming years; ask the seller for the permit or invoice."}
+     ]},
+    {"k": "exterior", "t": "Exterior and grounds", "desc": "Fiber-cement lap siding, wood trim, wood deck at the rear. Grading is mostly level.",
+     "items": [
+      {"s": "safety", "loc": "Rear deck stairs", "obs": "The stair handrail is loose and the guard balusters are about 6 inches apart.", "imp": "A loose rail and gaps over 4 inches are fall and child-entrapment hazards.", "rec": "Have a qualified contractor secure the rail and add balusters."},
+      {"s": "major", "loc": "Deck ledger board", "obs": "The ledger is nailed to the rim joist; no bolts or flashing are visible.", "imp": "Ledger failure is a common cause of deck collapse.", "rec": "Have a licensed contractor evaluate and add proper fasteners and flashing."},
+      {"s": "minor", "loc": "Left side, near the hose bib", "obs": "The soil slopes toward the foundation.", "imp": "Water can collect in the crawlspace.", "rec": "Regrade so the soil falls away from the house for at least 6 feet."}
+     ]},
+    {"k": "structure", "t": "Foundation, crawlspace and structure", "desc": "Concrete block foundation with a vented crawlspace. Entered and inspected about 80% of the area; the rest was blocked by ductwork.",
+     "items": [
+      {"s": "major", "loc": "Crawlspace, below the hall bathroom", "obs": "The subfloor is stained and soft when probed. The moisture meter read high.", "imp": "Signs of a long-term leak and possible wood decay.", "rec": "Have a licensed plumber find the leak source and a contractor repair the subfloor."},
+      {"s": "minor", "loc": "Crawlspace floor", "obs": "The vapor barrier is torn and does not cover the soil in several places.", "imp": "Exposed soil adds moisture to the crawlspace.", "rec": "Replace or repair the vapor barrier."},
+      {"s": "fyi", "loc": "Front foundation wall", "obs": "A hairline vertical crack in one block, about 12 inches long, with no displacement.", "imp": "Typical shrinkage. Not a structural concern on the day of the inspection.", "rec": "Monitor. If it widens, get a structural engineer's evaluation."}
+     ]},
+    {"k": "electrical", "t": "Electrical", "desc": "200-amp underground service. Main panel in the garage. Copper branch wiring (NM cable).",
+     "items": [
+      {"s": "safety", "loc": "Main panel", "obs": "Two circuits are double-tapped on one breaker, and one knockout is open.", "imp": "Double taps can overheat; an open knockout exposes live parts.", "rec": "Have a licensed electrician correct the double tap and install a filler plate."},
+      {"s": "safety", "loc": "Kitchen counter and exterior outlets", "obs": "No GFCI protection at the counter outlets or the rear exterior outlet.", "imp": "Shock risk near water.", "rec": "Have a licensed electrician add GFCI protection."},
+      {"s": "safety", "loc": "Hallway, bedrooms", "obs": "No carbon monoxide alarm. The home has gas appliances and an attached garage.", "imp": "CO is odorless and can be fatal.", "rec": "Install CO alarms outside the sleeping areas."}
+     ]},
+    {"k": "plumbing", "t": "Plumbing", "desc": "Public water and sewer. Copper supply lines, PVC drains. Main shut-off in the garage. 50-gallon gas water heater, 2014.",
+     "items": [
+      {"s": "major", "loc": "Hall bathroom toilet", "obs": "The toilet rocks and the flooring at the base is soft.", "imp": "A failed wax seal is likely leaking into the subfloor (see crawlspace).", "rec": "Have a licensed plumber reset the toilet and repair the flange."},
+      {"s": "safety", "loc": "Water heater", "obs": "The TPR discharge pipe ends 18 inches above the floor and is reduced in size.", "imp": "A full-size pipe ending near the floor keeps scalding water away from people.", "rec": "Have a licensed plumber correct the discharge pipe."},
+      {"s": "fyi", "loc": "Water heater", "obs": "The unit is 12 years old by its data plate.", "imp": "Older than the typical service life range for tank water heaters.", "rec": "Budget for replacement."}
+     ]},
+    {"k": "hvac", "t": "Heating and cooling", "desc": "Gas forced-air furnace in the hall closet, 2009. Split-system AC, 2009. Thermostat in the hallway.",
+     "items": [
+      {"s": "minor", "loc": "Furnace", "obs": "The air filter is heavily loaded with dust.", "imp": "Reduces airflow and efficiency.", "rec": "Replace the filter and have the system serviced."},
+      {"s": "major", "loc": "AC condenser", "obs": "The temperature split between return and supply air was 9°F; the condenser fins are crushed.", "imp": "The system may be low on refrigerant or near the end of its life.", "rec": "Have a licensed HVAC contractor evaluate before closing."}
+     ]},
+    {"k": "attic", "t": "Attic, insulation and ventilation", "desc": "Entered from the hall hatch. Blown fiberglass about 8 inches deep. Soffit and ridge vents.",
+     "items": [
+      {"s": "minor", "loc": "Above the main bathroom", "obs": "The bath fan duct ends in the attic instead of at an exterior vent.", "imp": "Moist air in the attic can cause condensation and mold-like growth.", "rec": "Extend the duct to an exterior roof or wall cap."},
+      {"s": "fyi", "loc": "Attic floor", "obs": "Insulation is about 8 inches deep, below current energy-code levels for many climates.", "imp": "Higher heating and cooling costs.", "rec": "Consider adding insulation."}
+     ]},
+    {"k": "interior", "t": "Interior, doors and windows", "desc": "Drywall walls and ceilings, carpet and vinyl plank floors, vinyl double-pane windows.",
+     "items": [
+      {"s": "minor", "loc": "Bedroom 2", "obs": "Two windows have fogged glass between the panes.", "imp": "The seals have failed; insulating value is reduced.", "rec": "Replace the glass units."},
+      {"s": "fyi", "loc": "Living room ceiling", "obs": "A dry water stain below the hall bathroom. The moisture meter read normal.", "imp": "Likely related to the bathroom leak noted above.", "rec": "Ask the seller about past leaks and repairs."}
+     ]},
+    {"k": "garage", "t": "Garage", "desc": "Attached two-car garage with a sectional door and an automatic opener.",
+     "items": [
+      {"s": "safety", "loc": "Garage vehicle door", "obs": "The door did not reverse when the photo-eye beam was blocked.", "imp": "Risk of injury to people and pets.", "rec": "Have a garage door technician adjust the sensors and reversal."},
+      {"s": "major", "loc": "Door into the house", "obs": "Hollow-core interior door between the garage and the house.", "imp": "Does not provide the fire separation expected between the garage and the living space.", "rec": "Replace with a solid or fire-rated, self-closing door."}
+     ]}
+  ]
+}

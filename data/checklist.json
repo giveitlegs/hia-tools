@@ -1,0 +1,126 @@
+{
+  "last_checked": "2026-11-21",
+  "modes": [
+    ["b", "Buyer"],
+    ["s", "Seller pre-listing"],
+    ["n", "New construction"],
+    ["c", "Condo / townhome"],
+    ["m", "Mobile / manufactured"]
+  ],
+  "sources": [
+    {"name": "InterNACHI Home Inspection Standards of Practice", "url": "https://www.nachi.org/sop.htm"},
+    {"name": "ASHI Standard of Practice for Home Inspections", "url": "https://www.homeinspector.org/standards-of-practice"},
+    {"name": "HUD Manufactured Housing Construction and Safety Standards (24 CFR 3280)", "url": "https://www.ecfr.gov/current/title-24/subtitle-B/chapter-XX/part-3280"}
+  ],
+  "sections": [
+    {"k": "prep", "t": "Before the inspection", "sop": null, "items": [
+      {"t": "Book the inspection inside your contingency window and note the deadline", "m": "bncm"},
+      {"t": "Confirm the inspector's state license (where required) and insurance", "m": "bsncm"},
+      {"t": "Add-ons booked if needed: radon, sewer scope, termite/WDO, mold, septic, well water", "m": "bncm"},
+      {"t": "Utilities on (water, power, gas) and pilot lights lit", "m": "s"},
+      {"t": "Clear access to the electrical panel, water heater, furnace, attic hatch and crawlspace", "m": "s"},
+      {"t": "Replace the furnace filter and test smoke and CO alarms", "m": "s"},
+      {"t": "Gather receipts and permits for roof, HVAC, water heater and major repairs", "m": "s"},
+      {"t": "Ask the HOA what it maintains (roof, exterior, plumbing risers) and for the reserve study", "m": "c"},
+      {"t": "Request builder plans, permits, and the municipal inspection records", "m": "n"},
+      {"t": "Locate the HUD data plate and red certification labels; ask for the installation permit", "m": "m"}
+    ]},
+    {"k": "ext", "t": "Exterior and grounds", "sop": "3.2", "items": [
+      {"t": "Grading slopes away from the foundation; no standing water near walls", "m": "bsnm"},
+      {"t": "Gutters and downspouts attached and discharging away from the house", "m": "bsnc"},
+      {"t": "Siding, trim, eaves, soffits and fascia: rot, gaps, missing pieces, peeling paint", "m": "bsncm"},
+      {"t": "Exterior doors close, latch and seal; weatherstripping intact", "m": "bsncm"},
+      {"t": "Decks, porches, balconies: ledger attachment, loose boards, guard height and baluster spacing", "m": "bsncm"},
+      {"t": "Walkways, driveway and steps: trip hazards, settlement, handrails where needed", "m": "bsnc"},
+      {"t": "Vegetation and trees clear of the roof and siding", "m": "bsncm"},
+      {"t": "Retaining walls: leaning, cracking, missing drainage", "m": "bsn"},
+      {"t": "Skirting intact and vented; no animal entry points", "m": "m"}
+    ]},
+    {"k": "roof", "t": "Roof", "sop": "3.1", "items": [
+      {"t": "Roof covering type noted; missing, curled or cracked shingles or tiles", "m": "bsnm"},
+      {"t": "Flashing at chimneys, walls, skylights and vents", "m": "bsnm"},
+      {"t": "Signs of active leaks at ceilings and in the attic", "m": "bsncm"},
+      {"t": "Roof age and remaining life asked of the seller (affects insurance in some states)", "m": "bcm"},
+      {"t": "Chimney exterior: cracked crown, loose bricks, missing cap", "m": "bsn"}
+    ]},
+    {"k": "struct", "t": "Structure, foundation and crawlspace", "sop": "3.3", "items": [
+      {"t": "Foundation type noted; cracks, bowing walls or displacement", "m": "bsn"},
+      {"t": "Signs of movement: sticking doors, out-of-square frames, sloping floors, drywall cracks", "m": "bsncm"},
+      {"t": "Water in the basement or crawlspace; efflorescence, staining, sump pump condition", "m": "bsn"},
+      {"t": "Wood in contact with soil; rot or wood-destroying insect damage", "m": "bsnm"},
+      {"t": "Cut, notched or bored joists and beams", "m": "bsn"},
+      {"t": "Crawlspace vapor barrier, insulation and ventilation", "m": "bsn"},
+      {"t": "Piers, tie-downs and anchoring straps present and tight", "m": "m"},
+      {"t": "Marriage line (double-wide) sealed and level", "m": "m"}
+    ]},
+    {"k": "attic", "t": "Attic, insulation and ventilation", "sop": "3.9", "items": [
+      {"t": "Insulation type and approximate depth", "m": "bsnm"},
+      {"t": "Attic ventilation; staining, mold-like growth or frost on roof sheathing", "m": "bsn"},
+      {"t": "Bath and kitchen fans vent outside, not into the attic", "m": "bsncm"},
+      {"t": "Evidence of pests or rodents in the attic", "m": "bsn"}
+    ]},
+    {"k": "elec", "t": "Electrical", "sop": "3.7", "items": [
+      {"t": "Service size (amps) and panel type noted; known problem panels flagged", "m": "bsncm"},
+      {"t": "Open panel slots, double-tapped breakers, scorch marks", "m": "bsncm"},
+      {"t": "GFCI protection in kitchen, baths, garage, exterior and near water", "m": "bsncm"},
+      {"t": "Representative outlets tested for power, polarity and grounding", "m": "bsncm"},
+      {"t": "Solid-conductor aluminum branch wiring or knob-and-tube (older homes)", "m": "bcm"},
+      {"t": "Smoke and carbon monoxide alarms present", "m": "bsncm"},
+      {"t": "Service drop clearance and condition of the meter and mast", "m": "bsn"}
+    ]},
+    {"k": "plumb", "t": "Plumbing", "sop": "3.6", "items": [
+      {"t": "Main water and fuel shut-offs located", "m": "bsncm"},
+      {"t": "Water pressure and flow with two fixtures running", "m": "bsncm"},
+      {"t": "Leaks under sinks and around toilets; loose toilets", "m": "bsncm"},
+      {"t": "Drainage speed at sinks, tubs and showers", "m": "bsncm"},
+      {"t": "Water heater age, TPR valve and discharge pipe, venting", "m": "bsncm"},
+      {"t": "Supply pipe material noted (copper, PEX, galvanized, polybutylene)", "m": "bcm"},
+      {"t": "Sewer scope booked for older homes or homes with mature trees", "m": "b"},
+      {"t": "Private well and septic: separate testing and pumping arranged", "m": "bm"}
+    ]},
+    {"k": "hvac", "t": "Heating and cooling", "sop": "3.4 / 3.5", "items": [
+      {"t": "Heating system runs from the thermostat; energy source and method noted", "m": "bsncm"},
+      {"t": "Cooling system runs (inspectors may skip it below 65°F)", "m": "bsncm"},
+      {"t": "Equipment age and service records requested", "m": "bscm"},
+      {"t": "Filters, visible ductwork and condensate drain", "m": "bsncm"},
+      {"t": "Flue and venting connections for gas appliances", "m": "bsncm"}
+    ]},
+    {"k": "int", "t": "Interior rooms", "sop": "3.10", "items": [
+      {"t": "Representative doors and windows open, close and latch", "m": "bsncm"},
+      {"t": "Fogged double-pane windows (failed seals)", "m": "bsncm"},
+      {"t": "Ceilings and walls: water stains, cracks, soft spots", "m": "bsncm"},
+      {"t": "Stairs and railings: loose handrails, baluster spacing, guard height", "m": "bsncm"},
+      {"t": "Floors: soft spots, sloping, damaged subfloor near wet areas", "m": "bsncm"}
+    ]},
+    {"k": "kit", "t": "Kitchen and bathrooms", "sop": "3.6 / 3.10", "items": [
+      {"t": "Sink, faucet and drain operation; leaks in the base cabinet", "m": "bsncm"},
+      {"t": "Tub and shower surrounds: cracked tile, failed caulk, soft walls", "m": "bsncm"},
+      {"t": "Exhaust fans work and are ducted outside", "m": "bsncm"},
+      {"t": "Signs of moisture or mold-like growth around fixtures", "m": "bsncm"},
+      {"t": "Appliances: ask which convey; most inspectors only test built-ins at their discretion", "m": "bc"}
+    ]},
+    {"k": "fire", "t": "Fireplace", "sop": "3.8", "items": [
+      {"t": "Damper opens and closes; firebox and hearth intact", "m": "bsnc"},
+      {"t": "Smoke and CO alarms in the same room as the fireplace", "m": "bsnc"},
+      {"t": "Level 2 chimney inspection booked if you plan to use it", "m": "b"}
+    ]},
+    {"k": "gar", "t": "Garage", "sop": "3.10", "items": [
+      {"t": "Garage door opener auto-reverse and photo-eye sensors", "m": "bsncm"},
+      {"t": "Fire-rated door and wall between the garage and the house", "m": "bsnc"},
+      {"t": "Slab cracks and signs of water entry", "m": "bsn"}
+    ]},
+    {"k": "new", "t": "New construction phases", "sop": null, "items": [
+      {"t": "Pre-pour (foundation) inspection", "m": "n"},
+      {"t": "Pre-drywall (framing, rough plumbing, rough electrical) inspection", "m": "n"},
+      {"t": "Final inspection before the builder walkthrough", "m": "n"},
+      {"t": "11-month warranty inspection booked before the builder warranty ends", "m": "n"}
+    ]},
+    {"k": "after", "t": "After the inspection", "sop": null, "items": [
+      {"t": "Read the summary page first; sort items into safety, major, and maintenance", "m": "bncm"},
+      {"t": "Get contractor quotes for big-ticket items before your deadline", "m": "bncm"},
+      {"t": "Send a repair request or credit request using your state's addendum form", "m": "bcm"},
+      {"t": "Fix or disclose the items found before listing", "m": "s"},
+      {"t": "Punch list sent to the builder in writing", "m": "n"}
+    ]}
+  ]
+}

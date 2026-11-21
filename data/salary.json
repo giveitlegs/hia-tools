@@ -1,0 +1,779 @@
+{
+  "last_checked": "2026-11-21",
+  "reference_period": "May 2025",
+  "soc": "47-4011",
+  "note": "BLS SOC 47-4011 covers construction and building inspectors, including but not limited to home inspectors.",
+  "sources": [
+    {
+      "name": "BLS OEWS May 2025 Occupation Profile: 47-4011 Construction and Building Inspectors (OEWS Profiles)",
+      "url": "https://data.bls.gov/oesprofile/?year=2025&major_group=470000&occupation=474011&measure=01&areas=INDUSTRY,STATE,MSA"
+    },
+    {
+      "name": "BLS Public Data API v2, OEWS series OEUN/OEUS/OEUM...474011 (May 2025 estimates)",
+      "url": "https://api.bls.gov/publicAPI/v2/timeseries/data/"
+    },
+    {
+      "name": "BLS OEWS Tables (May 2025)",
+      "url": "https://www.bls.gov/oes/tables.htm"
+    },
+    {
+      "name": "BLS Occupational Outlook Handbook: Construction and Building Inspectors",
+      "url": "https://www.bls.gov/ooh/construction-and-extraction/construction-and-building-inspectors.htm"
+    }
+  ],
+  "national": {
+    "employment": 146720,
+    "mean_annual": 77730,
+    "median_annual": 74690,
+    "p10": 47140,
+    "p25": 58860,
+    "p75": 94710,
+    "p90": 114200,
+    "mean_hourly": 37.37
+  },
+  "ooh": {
+    "median_pay": 74690,
+    "median_pay_year": 2025,
+    "median_pay_hourly": 35.91,
+    "jobs": 153900,
+    "jobs_year": 2025,
+    "outlook_pct": 0,
+    "outlook_label": "Little or no change",
+    "outlook_period": "2025-35",
+    "entry_education": "High school diploma or equivalent",
+    "self_employed_pct": null,
+    "self_employed_note": "OOH page gives no self-employed percentage; it says only that some inspectors, especially self-employed ones, work evenings and weekends. OEWS estimates exclude self-employed workers."
+  },
+  "states": [
+    {
+      "code": "AL",
+      "name": "Alabama",
+      "slug": "alabama",
+      "employment": 1420,
+      "mean_annual": 64130,
+      "median_annual": 61300,
+      "p10": 46010,
+      "p25": 51120,
+      "p75": 74870,
+      "p90": 85770
+    },
+    {
+      "code": "AK",
+      "name": "Alaska",
+      "slug": "alaska",
+      "employment": 270,
+      "mean_annual": 102330,
+      "median_annual": 102410,
+      "p10": 73550,
+      "p25": 80560,
+      "p75": 121250,
+      "p90": 124840
+    },
+    {
+      "code": "AZ",
+      "name": "Arizona",
+      "slug": "arizona",
+      "employment": 3330,
+      "mean_annual": 78380,
+      "median_annual": 73440,
+      "p10": 55310,
+      "p25": 62320,
+      "p75": 86760,
+      "p90": 105980
+    },
+    {
+      "code": "AR",
+      "name": "Arkansas",
+      "slug": "arkansas",
+      "employment": 800,
+      "mean_annual": 57710,
+      "median_annual": 52700,
+      "p10": 39450,
+      "p25": 46280,
+      "p75": 66560,
+      "p90": 81340
+    },
+    {
+      "code": "CA",
+      "name": "California",
+      "slug": "california",
+      "employment": 13420,
+      "mean_annual": 103850,
+      "median_annual": 101290,
+      "p10": 56220,
+      "p25": 76160,
+      "p75": 128530,
+      "p90": 161550
+    },
+    {
+      "code": "CO",
+      "name": "Colorado",
+      "slug": "colorado",
+      "employment": 3700,
+      "mean_annual": 83300,
+      "median_annual": 79950,
+      "p10": 54290,
+      "p25": 65740,
+      "p75": 98280,
+      "p90": 121740
+    },
+    {
+      "code": "CT",
+      "name": "Connecticut",
+      "slug": "connecticut",
+      "employment": 1430,
+      "mean_annual": 97580,
+      "median_annual": 98670,
+      "p10": 65140,
+      "p25": 79140,
+      "p75": 115100,
+      "p90": 129830
+    },
+    {
+      "code": "DE",
+      "name": "Delaware",
+      "slug": "delaware",
+      "employment": 570,
+      "mean_annual": 72940,
+      "median_annual": 72700,
+      "p10": 52350,
+      "p25": 61970,
+      "p75": 81400,
+      "p90": 95690
+    },
+    {
+      "code": "DC",
+      "name": "District of Columbia",
+      "slug": "washington-dc",
+      "employment": 370,
+      "mean_annual": 93030,
+      "median_annual": 86200,
+      "p10": 68120,
+      "p25": 76130,
+      "p75": 109920,
+      "p90": 131810
+    },
+    {
+      "code": "FL",
+      "name": "Florida",
+      "slug": "florida",
+      "employment": 13860,
+      "mean_annual": 71350,
+      "median_annual": 68170,
+      "p10": 45460,
+      "p25": 54080,
+      "p75": 83390,
+      "p90": 100280
+    },
+    {
+      "code": "GA",
+      "name": "Georgia",
+      "slug": "georgia",
+      "employment": 4510,
+      "mean_annual": 70960,
+      "median_annual": 65980,
+      "p10": 46070,
+      "p25": 54620,
+      "p75": 80340,
+      "p90": 100450
+    },
+    {
+      "code": "HI",
+      "name": "Hawaii",
+      "slug": "hawaii",
+      "employment": 710,
+      "mean_annual": 79900,
+      "median_annual": 79320,
+      "p10": 53590,
+      "p25": 66720,
+      "p75": 94570,
+      "p90": 99600
+    },
+    {
+      "code": "ID",
+      "name": "Idaho",
+      "slug": "idaho",
+      "employment": 1000,
+      "mean_annual": 71410,
+      "median_annual": 63570,
+      "p10": 48840,
+      "p25": 56680,
+      "p75": 83600,
+      "p90": 102000
+    },
+    {
+      "code": "IL",
+      "name": "Illinois",
+      "slug": "illinois",
+      "employment": 2560,
+      "mean_annual": 80320,
+      "median_annual": 78340,
+      "p10": 47600,
+      "p25": 59660,
+      "p75": 100030,
+      "p90": 119650
+    },
+    {
+      "code": "IN",
+      "name": "Indiana",
+      "slug": "indiana",
+      "employment": 2110,
+      "mean_annual": 67530,
+      "median_annual": 62850,
+      "p10": 44540,
+      "p25": 50740,
+      "p75": 79490,
+      "p90": 94350
+    },
+    {
+      "code": "IA",
+      "name": "Iowa",
+      "slug": "iowa",
+      "employment": 1140,
+      "mean_annual": 71050,
+      "median_annual": 71630,
+      "p10": 47470,
+      "p25": 60720,
+      "p75": 82150,
+      "p90": 90380
+    },
+    {
+      "code": "KS",
+      "name": "Kansas",
+      "slug": "kansas",
+      "employment": 840,
+      "mean_annual": 68210,
+      "median_annual": 63150,
+      "p10": 48170,
+      "p25": 56290,
+      "p75": 78720,
+      "p90": 91420
+    },
+    {
+      "code": "KY",
+      "name": "Kentucky",
+      "slug": "kentucky",
+      "employment": 1380,
+      "mean_annual": 66580,
+      "median_annual": 60200,
+      "p10": 37140,
+      "p25": 46410,
+      "p75": 79550,
+      "p90": 97670
+    },
+    {
+      "code": "LA",
+      "name": "Louisiana",
+      "slug": "louisiana",
+      "employment": 1440,
+      "mean_annual": 71070,
+      "median_annual": 68260,
+      "p10": 47450,
+      "p25": 59670,
+      "p75": 81460,
+      "p90": 95400
+    },
+    {
+      "code": "ME",
+      "name": "Maine",
+      "slug": "maine",
+      "employment": 710,
+      "mean_annual": 75140,
+      "median_annual": 74670,
+      "p10": 48340,
+      "p25": 61490,
+      "p75": 81410,
+      "p90": 102500
+    },
+    {
+      "code": "MD",
+      "name": "Maryland",
+      "slug": "maryland",
+      "employment": 2780,
+      "mean_annual": 79670,
+      "median_annual": 76640,
+      "p10": 53610,
+      "p25": 63530,
+      "p75": 94160,
+      "p90": 110250
+    },
+    {
+      "code": "MA",
+      "name": "Massachusetts",
+      "slug": "massachusetts",
+      "employment": 4290,
+      "mean_annual": 86940,
+      "median_annual": 83200,
+      "p10": 50330,
+      "p25": 65730,
+      "p75": 104030,
+      "p90": 123400
+    },
+    {
+      "code": "MI",
+      "name": "Michigan",
+      "slug": "michigan",
+      "employment": 3090,
+      "mean_annual": 71550,
+      "median_annual": 71040,
+      "p10": 47100,
+      "p25": 60680,
+      "p75": 82510,
+      "p90": 95980
+    },
+    {
+      "code": "MN",
+      "name": "Minnesota",
+      "slug": "minnesota",
+      "employment": 1390,
+      "mean_annual": 90440,
+      "median_annual": 88670,
+      "p10": 61610,
+      "p25": 78030,
+      "p75": 100890,
+      "p90": 112420
+    },
+    {
+      "code": "MS",
+      "name": "Mississippi",
+      "slug": "mississippi",
+      "employment": 800,
+      "mean_annual": 55760,
+      "median_annual": 50250,
+      "p10": 35600,
+      "p25": 42660,
+      "p75": 65350,
+      "p90": 76400
+    },
+    {
+      "code": "MO",
+      "name": "Missouri",
+      "slug": "missouri",
+      "employment": 1640,
+      "mean_annual": 65140,
+      "median_annual": 62970,
+      "p10": 46980,
+      "p25": 52040,
+      "p75": 76210,
+      "p90": 87690
+    },
+    {
+      "code": "MT",
+      "name": "Montana",
+      "slug": "montana",
+      "employment": 290,
+      "mean_annual": 75210,
+      "median_annual": 75700,
+      "p10": 49840,
+      "p25": 61110,
+      "p75": 84240,
+      "p90": 100850
+    },
+    {
+      "code": "NE",
+      "name": "Nebraska",
+      "slug": "nebraska",
+      "employment": 570,
+      "mean_annual": 67100,
+      "median_annual": 65000,
+      "p10": 45910,
+      "p25": 51880,
+      "p75": 79540,
+      "p90": 90880
+    },
+    {
+      "code": "NV",
+      "name": "Nevada",
+      "slug": "nevada",
+      "employment": 1780,
+      "mean_annual": 78320,
+      "median_annual": 75290,
+      "p10": 55510,
+      "p25": 61730,
+      "p75": 97730,
+      "p90": 105490
+    },
+    {
+      "code": "NH",
+      "name": "New Hampshire",
+      "slug": "new-hampshire",
+      "employment": 420,
+      "mean_annual": 68820,
+      "median_annual": 65640,
+      "p10": 45070,
+      "p25": 55680,
+      "p75": 80160,
+      "p90": 88610
+    },
+    {
+      "code": "NJ",
+      "name": "New Jersey",
+      "slug": "new-jersey",
+      "employment": 5950,
+      "mean_annual": 86370,
+      "median_annual": 81760,
+      "p10": 48880,
+      "p25": 63520,
+      "p75": 104690,
+      "p90": 126400
+    },
+    {
+      "code": "NM",
+      "name": "New Mexico",
+      "slug": "new-mexico",
+      "employment": 800,
+      "mean_annual": 70180,
+      "median_annual": 65420,
+      "p10": 48350,
+      "p25": 58700,
+      "p75": 79230,
+      "p90": 94870
+    },
+    {
+      "code": "NY",
+      "name": "New York",
+      "slug": "new-york",
+      "employment": 11160,
+      "mean_annual": 86600,
+      "median_annual": 79460,
+      "p10": 51540,
+      "p25": 61920,
+      "p75": 103960,
+      "p90": 134430
+    },
+    {
+      "code": "NC",
+      "name": "North Carolina",
+      "slug": "north-carolina",
+      "employment": 6490,
+      "mean_annual": 69070,
+      "median_annual": 66080,
+      "p10": 46840,
+      "p25": 56030,
+      "p75": 79430,
+      "p90": 95220
+    },
+    {
+      "code": "ND",
+      "name": "North Dakota",
+      "slug": "north-dakota",
+      "employment": 180,
+      "mean_annual": 78490,
+      "median_annual": 78570,
+      "p10": 55150,
+      "p25": 66370,
+      "p75": 89660,
+      "p90": 100390
+    },
+    {
+      "code": "OH",
+      "name": "Ohio",
+      "slug": "ohio",
+      "employment": 3490,
+      "mean_annual": 74770,
+      "median_annual": 74490,
+      "p10": 50440,
+      "p25": 62150,
+      "p75": 82830,
+      "p90": 100290
+    },
+    {
+      "code": "OK",
+      "name": "Oklahoma",
+      "slug": "oklahoma",
+      "employment": 2090,
+      "mean_annual": 63610,
+      "median_annual": 59280,
+      "p10": 41410,
+      "p25": 46330,
+      "p75": 76400,
+      "p90": 94850
+    },
+    {
+      "code": "OR",
+      "name": "Oregon",
+      "slug": "oregon",
+      "employment": 1780,
+      "mean_annual": 87080,
+      "median_annual": 84510,
+      "p10": 60970,
+      "p25": 72300,
+      "p75": 102760,
+      "p90": 115910
+    },
+    {
+      "code": "PA",
+      "name": "Pennsylvania",
+      "slug": "pennsylvania",
+      "employment": 5320,
+      "mean_annual": 69540,
+      "median_annual": 65870,
+      "p10": 48610,
+      "p25": 57860,
+      "p75": 78830,
+      "p90": 93790
+    },
+    {
+      "code": "RI",
+      "name": "Rhode Island",
+      "slug": "rhode-island",
+      "employment": 270,
+      "mean_annual": 80850,
+      "median_annual": 77420,
+      "p10": 57950,
+      "p25": 63520,
+      "p75": 96670,
+      "p90": 110940
+    },
+    {
+      "code": "SC",
+      "name": "South Carolina",
+      "slug": "south-carolina",
+      "employment": 2500,
+      "mean_annual": 60040,
+      "median_annual": 58840,
+      "p10": 36140,
+      "p25": 45370,
+      "p75": 74060,
+      "p90": 84860
+    },
+    {
+      "code": "SD",
+      "name": "South Dakota",
+      "slug": "south-dakota",
+      "employment": 200,
+      "mean_annual": 67260,
+      "median_annual": 64940,
+      "p10": 47670,
+      "p25": 53480,
+      "p75": 78410,
+      "p90": 89050
+    },
+    {
+      "code": "TN",
+      "name": "Tennessee",
+      "slug": "tennessee",
+      "employment": 2500,
+      "mean_annual": 61410,
+      "median_annual": 59870,
+      "p10": 38670,
+      "p25": 48430,
+      "p75": 73320,
+      "p90": 84600
+    },
+    {
+      "code": "TX",
+      "name": "Texas",
+      "slug": "texas",
+      "employment": 18230,
+      "mean_annual": 69810,
+      "median_annual": 64810,
+      "p10": 43220,
+      "p25": 50560,
+      "p75": 80370,
+      "p90": 105160
+    },
+    {
+      "code": "UT",
+      "name": "Utah",
+      "slug": "utah",
+      "employment": 1240,
+      "mean_annual": 73580,
+      "median_annual": 74130,
+      "p10": 48690,
+      "p25": 60070,
+      "p75": 84240,
+      "p90": 99630
+    },
+    {
+      "code": "VT",
+      "name": "Vermont",
+      "slug": "vermont",
+      "employment": 120,
+      "mean_annual": 70850,
+      "median_annual": 66580,
+      "p10": 49350,
+      "p25": 60320,
+      "p75": 82180,
+      "p90": 92110
+    },
+    {
+      "code": "VA",
+      "name": "Virginia",
+      "slug": "virginia",
+      "employment": 6550,
+      "mean_annual": 76220,
+      "median_annual": 75660,
+      "p10": 50090,
+      "p25": 60870,
+      "p75": 88340,
+      "p90": 104480
+    },
+    {
+      "code": "WA",
+      "name": "Washington",
+      "slug": "washington",
+      "employment": 3090,
+      "mean_annual": 93070,
+      "median_annual": 96140,
+      "p10": 63840,
+      "p25": 77480,
+      "p75": 105300,
+      "p90": 121700
+    },
+    {
+      "code": "WV",
+      "name": "West Virginia",
+      "slug": "west-virginia",
+      "employment": 540,
+      "mean_annual": 68180,
+      "median_annual": 64000,
+      "p10": 34090,
+      "p25": 47100,
+      "p75": 91520,
+      "p90": 92930
+    },
+    {
+      "code": "WI",
+      "name": "Wisconsin",
+      "slug": "wisconsin",
+      "employment": 1270,
+      "mean_annual": 75490,
+      "median_annual": 75610,
+      "p10": 47290,
+      "p25": 58450,
+      "p75": 87980,
+      "p90": 101240
+    },
+    {
+      "code": "WY",
+      "name": "Wyoming",
+      "slug": "wyoming",
+      "employment": 370,
+      "mean_annual": 61510,
+      "median_annual": 61870,
+      "p10": 35920,
+      "p25": 42970,
+      "p75": 79140,
+      "p90": 93470
+    }
+  ],
+  "territories": [
+    {
+      "code": "PR",
+      "name": "Puerto Rico",
+      "slug": "puerto-rico",
+      "employment": 740,
+      "mean_annual": 48900,
+      "median_annual": 44320,
+      "p10": 23960,
+      "p25": 31640,
+      "p75": 58030,
+      "p90": 86260
+    }
+  ],
+  "top_metros_pay": [
+    {
+      "name": "San Jose-Sunnyvale-Santa Clara, CA",
+      "employment": 860,
+      "mean_annual": 124420
+    },
+    {
+      "name": "San Francisco-Oakland-Fremont, CA",
+      "employment": 2380,
+      "mean_annual": 123300
+    },
+    {
+      "name": "Santa Maria-Santa Barbara, CA",
+      "employment": 210,
+      "mean_annual": 116130
+    },
+    {
+      "name": "Santa Rosa-Petaluma, CA",
+      "employment": 140,
+      "mean_annual": 110080
+    },
+    {
+      "name": "Vallejo, CA",
+      "employment": 190,
+      "mean_annual": 106740
+    },
+    {
+      "name": "Sacramento-Roseville-Folsom, CA",
+      "employment": 1060,
+      "mean_annual": 104680
+    },
+    {
+      "name": "Salinas, CA",
+      "employment": 90,
+      "mean_annual": 104660
+    },
+    {
+      "name": "Anchorage, AK",
+      "employment": 160,
+      "mean_annual": 104090
+    },
+    {
+      "name": "Napa, CA",
+      "employment": 50,
+      "mean_annual": 102640
+    },
+    {
+      "name": "Hartford-West Hartford-East Hartford, CT",
+      "employment": 750,
+      "mean_annual": 101940
+    }
+  ],
+  "top_metros_employment": [
+    {
+      "name": "New York-Newark-Jersey City, NY-NJ",
+      "employment": 10340,
+      "mean_annual": 93640
+    },
+    {
+      "name": "Dallas-Fort Worth-Arlington, TX",
+      "employment": 5450,
+      "mean_annual": 72420
+    },
+    {
+      "name": "Houston-Pasadena-The Woodlands, TX",
+      "employment": 4980,
+      "mean_annual": 72640
+    },
+    {
+      "name": "Miami-Fort Lauderdale-West Palm Beach, FL",
+      "employment": 4380,
+      "mean_annual": 76360
+    },
+    {
+      "name": "Washington-Arlington-Alexandria, DC-VA-MD-WV",
+      "employment": 4060,
+      "mean_annual": 85180
+    },
+    {
+      "name": "Los Angeles-Long Beach-Anaheim, CA",
+      "employment": 3870,
+      "mean_annual": 99710
+    },
+    {
+      "name": "Atlanta-Sandy Springs-Roswell, GA",
+      "employment": 3020,
+      "mean_annual": 73480
+    },
+    {
+      "name": "Boston-Cambridge-Newton, MA-NH",
+      "employment": 2950,
+      "mean_annual": 88130
+    },
+    {
+      "name": "Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",
+      "employment": 2900,
+      "mean_annual": 76580
+    },
+    {
+      "name": "Phoenix-Mesa-Chandler, AZ",
+      "employment": 2460,
+      "mean_annual": 80820
+    }
+  ]
+}

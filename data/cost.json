@@ -1,0 +1,724 @@
+{
+  "dataset": "Home inspection cost reference data",
+  "last_checked": "2026-11-21",
+  "notes": "All figures are typical ranges as published by each source; none are estimated by us. Angi and HomeAdvisor share a parent company and the same project data; Bankrate and Rocket Mortgage partly cite HomeAdvisor/Angi, so sources are not fully independent. 'verification' = 'page' when read from the fetched page, 'search_snippet' when the site blocked automated fetching and the figure comes from a search-engine excerpt.",
+  "national": {
+    "consensus": {
+      "low": 300,
+      "typical": 350,
+      "high": 500,
+      "note": "Rounded summary of the sources below: most published typical ranges fall between about $300 and $500, with averages of $340-$400, for a standard single-family home. Derived from the cited sources, not an independent figure."
+    },
+    "sources": [
+      {
+        "name": "Angi",
+        "url": "https://www.angi.com/articles/how-much-does-home-inspection-cost.htm",
+        "low": 296,
+        "high": 425,
+        "average": 344,
+        "year": 2026,
+        "published": "2026-09-25",
+        "basis": "34,526 verified projects from Angi Pros",
+        "verification": "page"
+      },
+      {
+        "name": "HomeAdvisor",
+        "url": "https://www.homeadvisor.com/cost/inspectors-and-appraisers/hire-a-home-inspector/",
+        "low": 296,
+        "high": 425,
+        "average": 344,
+        "year": 2026,
+        "published": "2026-06-19",
+        "basis": "HomeAdvisor cost data (same parent and data as Angi); body text also says $296-$424",
+        "verification": "page"
+      },
+      {
+        "name": "HomeGuide",
+        "url": "https://homeguide.com/costs/home-inspection-cost",
+        "low": 200,
+        "high": 500,
+        "average": 340,
+        "year": 2024,
+        "published": "2024-10-29",
+        "min": 200,
+        "max": 800,
+        "basis": "Average range $200-$500; minimum $200, maximum $800",
+        "verification": "page"
+      },
+      {
+        "name": "Fixr",
+        "url": "https://www.fixr.com/costs/home-inspection",
+        "low": 300,
+        "high": 500,
+        "average": 400,
+        "year": 2025,
+        "published": "2025-01-31",
+        "verification": "page"
+      },
+      {
+        "name": "NerdWallet",
+        "url": "https://www.nerdwallet.com/mortgages/learn/home-inspection",
+        "low": null,
+        "high": null,
+        "average": 400,
+        "year": 2026,
+        "published": "2026-02-02",
+        "basis": "'about $400 on average, according to the National Association of Realtors'",
+        "verification": "page"
+      },
+      {
+        "name": "Bankrate",
+        "url": "https://www.bankrate.com/real-estate/how-much-does-home-inspection-cost/",
+        "low": 296,
+        "high": 424,
+        "average": 343,
+        "year": 2025,
+        "published": "2025-02-07",
+        "basis": "Cites HomeAdvisor; under 1,000 sq ft about $200, over 2,000 sq ft about $400",
+        "verification": "page"
+      },
+      {
+        "name": "Forbes Home",
+        "url": "https://www.forbes.com/home-improvement/home-inspection/home-inspection-cost/",
+        "low": 200,
+        "high": 500,
+        "average": 340,
+        "year": null,
+        "basis": "Search excerpt: 'The average cost of a home inspection is $340, with costs ranging from $200 to $500.' Page date not confirmed (appears to be about 2024).",
+        "verification": "search_snippet"
+      },
+      {
+        "name": "Rocket Mortgage",
+        "url": "https://www.rocketmortgage.com/learn/home-inspection-cost",
+        "low": 300,
+        "high": 425,
+        "average": 345,
+        "year": 2025,
+        "basis": "Search excerpt: average about $345, most inspectors charge $300-$425 (as of 2025)",
+        "verification": "search_snippet"
+      }
+    ]
+  },
+  "size_bands": [
+    {
+      "min_sqft": 0,
+      "max_sqft": 999,
+      "low": 200,
+      "high": 250,
+      "source": "https://homeguide.com/costs/home-inspection-cost"
+    },
+    {
+      "min_sqft": 1000,
+      "max_sqft": 1500,
+      "low": 250,
+      "high": 300,
+      "source": "https://homeguide.com/costs/home-inspection-cost"
+    },
+    {
+      "min_sqft": 1501,
+      "max_sqft": 2000,
+      "low": 300,
+      "high": 400,
+      "source": "https://homeguide.com/costs/home-inspection-cost"
+    },
+    {
+      "min_sqft": 2001,
+      "max_sqft": 2500,
+      "low": 400,
+      "high": 450,
+      "source": "https://homeguide.com/costs/home-inspection-cost"
+    },
+    {
+      "min_sqft": 2501,
+      "max_sqft": 3000,
+      "low": 450,
+      "high": 500,
+      "source": "https://homeguide.com/costs/home-inspection-cost",
+      "note": "HomeGuide lists '$450 - $500+'"
+    }
+  ],
+  "size_bands_alt": {
+    "angi": {
+      "source": "https://www.angi.com/articles/how-much-does-home-inspection-cost.htm",
+      "year": 2026,
+      "bands": [
+        {
+          "min_sqft": 0,
+          "max_sqft": 999,
+          "low": 200,
+          "high": 250
+        },
+        {
+          "min_sqft": 1000,
+          "max_sqft": 1500,
+          "low": 225,
+          "high": 325
+        },
+        {
+          "min_sqft": 1500,
+          "max_sqft": 2000,
+          "low": 250,
+          "high": 375
+        },
+        {
+          "min_sqft": 2000,
+          "max_sqft": 2500,
+          "low": 275,
+          "high": 400
+        },
+        {
+          "min_sqft": 2500,
+          "max_sqft": 3000,
+          "low": 300,
+          "high": 500
+        }
+      ]
+    },
+    "fixr": {
+      "source": "https://www.fixr.com/costs/home-inspection",
+      "year": 2025,
+      "per_sqft_low": 0.18,
+      "per_sqft_high": 0.25,
+      "points": [
+        {
+          "sqft": 800,
+          "low": 145,
+          "high": 200
+        },
+        {
+          "sqft": 1000,
+          "low": 180,
+          "high": 250
+        },
+        {
+          "sqft": 1200,
+          "low": 215,
+          "high": 300
+        },
+        {
+          "sqft": 1400,
+          "low": 250,
+          "high": 350
+        },
+        {
+          "sqft": 1600,
+          "low": 290,
+          "high": 400
+        },
+        {
+          "sqft": 1800,
+          "low": 325,
+          "high": 450
+        },
+        {
+          "sqft": 2000,
+          "low": 360,
+          "high": 500
+        },
+        {
+          "sqft": 2200,
+          "low": 395,
+          "high": 550
+        }
+      ]
+    }
+  },
+  "above_3000_sqft": {
+    "text": "None of the sources checked publishes a band above 3,000 sq ft. Angi: 'Many inspectors set a flat fee for homes up to 2,000 square feet, then add roughly $25 for every additional 500 square feet above that threshold.' Fixr: average $0.18-$0.25 per sq ft.",
+    "per_500sqft_over_2000": 25,
+    "per_sqft_low": 0.18,
+    "per_sqft_high": 0.25,
+    "sources": [
+      "https://www.angi.com/articles/how-much-does-home-inspection-cost.htm",
+      "https://www.fixr.com/costs/home-inspection"
+    ]
+  },
+  "property_types": [
+    {
+      "key": "condo",
+      "label": "Condo (500-1,000 sq ft unit)",
+      "low": 200,
+      "high": 250,
+      "source": "https://homeguide.com/costs/home-inspection-cost"
+    },
+    {
+      "key": "condo",
+      "label": "Condo",
+      "low": 200,
+      "high": 400,
+      "source": "https://www.fixr.com/costs/home-inspection"
+    },
+    {
+      "key": "townhome",
+      "label": "Townhouse",
+      "low": 300,
+      "high": 500,
+      "source": "https://www.fixr.com/costs/home-inspection"
+    },
+    {
+      "key": "single_family",
+      "label": "Single-family",
+      "low": 300,
+      "high": 500,
+      "source": "https://www.fixr.com/costs/home-inspection"
+    },
+    {
+      "key": "mobile_single",
+      "label": "Mobile home, single-wide (600-1,300 sq ft)",
+      "low": 200,
+      "high": 300,
+      "source": "https://homeguide.com/costs/home-inspection-cost"
+    },
+    {
+      "key": "mobile_double",
+      "label": "Mobile home, double-wide (1,100-2,200 sq ft)",
+      "low": 250,
+      "high": 450,
+      "source": "https://homeguide.com/costs/home-inspection-cost"
+    },
+    {
+      "key": "mobile",
+      "label": "Mobile home",
+      "low": 250,
+      "high": 400,
+      "source": "https://www.fixr.com/costs/home-inspection"
+    },
+    {
+      "key": "multi_family",
+      "label": "Multi-family",
+      "low": 400,
+      "high": 800,
+      "source": "https://www.fixr.com/costs/home-inspection"
+    },
+    {
+      "key": "tiny_home",
+      "label": "Tiny home",
+      "low": 150,
+      "high": 250,
+      "source": "https://www.fixr.com/costs/home-inspection"
+    },
+    {
+      "key": "guest_house",
+      "label": "Guest or pool house",
+      "low": 200,
+      "high": 250,
+      "source": "https://homeguide.com/costs/home-inspection-cost"
+    },
+    {
+      "key": "new_construction",
+      "label": "New construction (full inspection)",
+      "low": 280,
+      "high": 400,
+      "source": "https://www.angi.com/articles/how-much-does-home-inspection-cost.htm"
+    },
+    {
+      "key": "pre_drywall",
+      "label": "Pre-drywall inspection",
+      "low": 100,
+      "high": 400,
+      "source": "https://homeguide.com/costs/home-inspection-cost"
+    },
+    {
+      "key": "eleven_month",
+      "label": "11-month builder-warranty inspection",
+      "low": 250,
+      "high": 350,
+      "source": "https://homeguide.com/costs/home-inspection-cost"
+    }
+  ],
+  "age_foundation": [
+    {
+      "topic": "older_homes",
+      "text": "Older homes often have more issues, requiring the inspector to spend additional time in the house. For example, houses built before the 1980s may contain toxic materials such as asbestos or lead paint. Inspecting for these and similar issues can increase the fee by $100 to $200.",
+      "low": 100,
+      "high": 200,
+      "source": "https://homeguide.com/costs/home-inspection-cost"
+    },
+    {
+      "topic": "older_homes",
+      "text": "Older homes often cost more to inspect because the inspector needs additional time to evaluate aging wiring, plumbing, and code compliance.",
+      "source": "https://www.angi.com/articles/how-much-does-home-inspection-cost.htm"
+    },
+    {
+      "topic": "crawlspace_basement",
+      "text": "Houses with basements and crawl spaces will be more expensive to inspect because crawl spaces are tight areas and more difficult to reach. A basement or crawlspace means more square footage to cover and more to report on overall.",
+      "source": "https://www.fixr.com/costs/home-inspection"
+    },
+    {
+      "topic": "other_fees",
+      "text": "Travel fees: inspectors may charge $1 to $2 per mile beyond 20 to 60 miles. Freestanding structures (guest houses, detached garages, barns) add $25 to $50 each.",
+      "source": "https://homeguide.com/costs/home-inspection-cost"
+    },
+    {
+      "topic": "hourly",
+      "text": "A house inspection can cost from $80 to $150 per hour when billed by time.",
+      "source": "https://www.fixr.com/costs/home-inspection"
+    }
+  ],
+  "addons": [
+    {
+      "key": "radon",
+      "label": "Radon test",
+      "low": 125,
+      "high": 400,
+      "sources": [
+        "https://homeguide.com/costs/home-inspection-cost",
+        "https://www.fixr.com/costs/home-inspection"
+      ],
+      "other": [
+        {
+          "source": "https://www.angi.com/articles/how-much-does-home-inspection-cost.htm",
+          "average": 250
+        }
+      ]
+    },
+    {
+      "key": "mold",
+      "label": "Mold inspection/testing",
+      "low": 300,
+      "high": 650,
+      "sources": [
+        "https://homeguide.com/costs/home-inspection-cost"
+      ],
+      "other": [
+        {
+          "source": "https://www.fixr.com/costs/home-inspection",
+          "low": 450,
+          "high": 800
+        },
+        {
+          "source": "https://www.nerdwallet.com/article/mortgages/types-of-home-inspections",
+          "low": 200,
+          "high": 600,
+          "note": "'from $200 to over $600'"
+        },
+        {
+          "source": "https://www.angi.com/articles/how-much-does-home-inspection-cost.htm",
+          "average": 660
+        }
+      ]
+    },
+    {
+      "key": "sewer_scope",
+      "label": "Sewer scope (camera)",
+      "low": 125,
+      "high": 500,
+      "sources": [
+        "https://homeguide.com/costs/home-inspection-cost"
+      ],
+      "other": [
+        {
+          "source": "https://www.fixr.com/costs/home-inspection",
+          "low": 200,
+          "high": 1000
+        },
+        {
+          "source": "https://www.rocketmortgage.com/learn/sewer-scope-inspection",
+          "low": 100,
+          "high": 500,
+          "verification": "search_snippet"
+        }
+      ]
+    },
+    {
+      "key": "termite_wdo",
+      "label": "Termite / WDO inspection",
+      "low": 50,
+      "high": 350,
+      "sources": [
+        "https://homeguide.com/costs/home-inspection-cost"
+      ],
+      "other": [
+        {
+          "source": "https://www.fixr.com/costs/home-inspection",
+          "low": 150,
+          "high": 350
+        },
+        {
+          "source": "https://www.nerdwallet.com/article/mortgages/types-of-home-inspections",
+          "average": 100,
+          "note": "'generally around $100'"
+        },
+        {
+          "source": "https://www.angi.com/articles/how-much-does-home-inspection-cost.htm",
+          "average": 125,
+          "note": "listed as 'Pests'"
+        }
+      ]
+    },
+    {
+      "key": "pool_spa",
+      "label": "Pool/spa inspection",
+      "low": 75,
+      "high": 350,
+      "sources": [
+        "https://homeguide.com/costs/home-inspection-cost"
+      ],
+      "other": [
+        {
+          "source": "https://www.fixr.com/costs/home-inspection",
+          "low": 150,
+          "high": 300
+        }
+      ]
+    },
+    {
+      "key": "septic",
+      "label": "Septic inspection",
+      "low": 150,
+      "high": 650,
+      "sources": [
+        "https://homeguide.com/costs/home-inspection-cost"
+      ],
+      "other": [
+        {
+          "source": "https://www.fixr.com/costs/home-inspection",
+          "low": 150,
+          "high": 300
+        }
+      ]
+    },
+    {
+      "key": "well_water",
+      "label": "Well & water testing",
+      "low": 250,
+      "high": 550,
+      "sources": [
+        "https://homeguide.com/costs/home-inspection-cost"
+      ],
+      "other": [
+        {
+          "source": "https://www.fixr.com/costs/home-inspection",
+          "low": 300,
+          "high": 500
+        }
+      ]
+    },
+    {
+      "key": "four_point",
+      "label": "4-point inspection (FL insurance)",
+      "low": 50,
+      "high": 175,
+      "sources": [
+        "https://homeguide.com/costs/home-inspection-cost",
+        "https://www.fixr.com/costs/home-inspection"
+      ],
+      "other": [
+        {
+          "source": "https://homeguide.com/costs/home-inspection-cost",
+          "low": 50,
+          "high": 100
+        },
+        {
+          "source": "https://www.fixr.com/costs/home-inspection",
+          "low": 50,
+          "high": 175,
+          "note": "Fixr also says 'around $125'"
+        },
+        {
+          "source": "https://www.forbes.com/home-improvement/home-inspection/home-inspection-cost/",
+          "low": 100,
+          "high": 200,
+          "verification": "search_snippet"
+        }
+      ]
+    },
+    {
+      "key": "wind_mitigation",
+      "label": "Wind mitigation (FL)",
+      "low": 75,
+      "high": 150,
+      "sources": [
+        "https://www.fixr.com/costs/home-inspection"
+      ]
+    },
+    {
+      "key": "thermal_imaging",
+      "label": "Infrared/thermal imaging",
+      "low": 300,
+      "high": 500,
+      "sources": [
+        "https://homeguide.com/costs/home-inspection-cost"
+      ],
+      "other": [
+        {
+          "source": "https://www.fixr.com/costs/home-inspection",
+          "low": 200,
+          "high": 800
+        }
+      ]
+    },
+    {
+      "key": "asbestos",
+      "label": "Asbestos inspection",
+      "low": 250,
+      "high": 750,
+      "sources": [
+        "https://homeguide.com/costs/home-inspection-cost",
+        "https://www.fixr.com/costs/home-inspection"
+      ],
+      "other": [
+        {
+          "source": "https://www.angi.com/articles/how-much-does-home-inspection-cost.htm",
+          "average": 490
+        }
+      ]
+    },
+    {
+      "key": "lead_paint",
+      "label": "Lead paint inspection",
+      "low": 250,
+      "high": 700,
+      "sources": [
+        "https://homeguide.com/costs/home-inspection-cost"
+      ],
+      "other": [
+        {
+          "source": "https://www.fixr.com/costs/home-inspection",
+          "low": 350,
+          "high": 500
+        },
+        {
+          "source": "https://www.angi.com/articles/how-much-does-home-inspection-cost.htm",
+          "average": 340
+        }
+      ]
+    },
+    {
+      "key": "chimney",
+      "label": "Chimney inspection",
+      "low": 360,
+      "high": 400,
+      "sources": [
+        "https://homeguide.com/costs/home-inspection-cost"
+      ],
+      "other": [
+        {
+          "source": "https://www.angi.com/articles/how-much-does-home-inspection-cost.htm",
+          "average": 450
+        }
+      ]
+    }
+  ],
+  "state_adjustment": {
+    "label": "BEA Regional Price Parities, all items (US = 100)",
+    "description": "Measures differences in overall price levels across states for a given year. It is a general cost-of-living index, not a home-inspection price index; use only as a clearly labelled approximate adjustment.",
+    "rpp_year": 2024,
+    "release_date": "2026-02-19",
+    "next_release": "2026-12-10",
+    "source": "https://www.bea.gov/data/prices-inflation/regional-price-parities-state-and-metro-area",
+    "data_file": "https://apps.bea.gov/regional/zip/SARPP.zip",
+    "data_table": "SARPP_STATE_2008_2024.csv, LineCode 1 'RPPs: All items', column 2024, rounded to 1 decimal",
+    "news_release": "https://www.bea.gov/news/2026/real-personal-consumption-expenditures-state-and-real-personal-income-state-2024",
+    "news_release_pdf": "https://www.bea.gov/sites/default/files/2026-02/rpp0226.pdf",
+    "check": "Matches BEA page text: CA 110.7, HI 110.0, NJ 108.8, DC 109.9, AR 86.9, MS 87.0, IA 87.8, OK 87.8.",
+    "rpp": {
+      "AL": 88.8,
+      "AK": 102.4,
+      "AZ": 100.7,
+      "AR": 86.9,
+      "CA": 110.7,
+      "CO": 103.1,
+      "CT": 103.6,
+      "DE": 99.8,
+      "DC": 109.9,
+      "FL": 103.4,
+      "GA": 96.3,
+      "HI": 110.0,
+      "ID": 95.5,
+      "IL": 100.0,
+      "IN": 93.3,
+      "IA": 87.8,
+      "KS": 90.1,
+      "KY": 90.2,
+      "LA": 88.2,
+      "ME": 97.0,
+      "MD": 105.0,
+      "MA": 105.8,
+      "MI": 96.2,
+      "MN": 98.6,
+      "MS": 87.0,
+      "MO": 90.8,
+      "MT": 94.6,
+      "NE": 90.1,
+      "NV": 100.0,
+      "NH": 104.2,
+      "NJ": 108.8,
+      "NM": 92.2,
+      "NY": 107.9,
+      "NC": 94.3,
+      "ND": 89.0,
+      "OH": 92.8,
+      "OK": 87.8,
+      "OR": 103.4,
+      "PA": 97.6,
+      "RI": 102.3,
+      "SC": 93.7,
+      "SD": 88.6,
+      "TN": 91.9,
+      "TX": 97.1,
+      "UT": 98.9,
+      "VT": 98.0,
+      "VA": 101.1,
+      "WA": 107.0,
+      "WV": 89.5,
+      "WI": 94.1,
+      "WY": 92.7
+    }
+  },
+  "state_published_ranges_note": "HomeGuide (2024) also publishes per-state inspection price ranges at the HomeGuide URL; not transcribed here.",
+  "sources": [
+    {
+      "name": "Angi - How Much Does a Home Inspection Cost? [2026 Data]",
+      "url": "https://www.angi.com/articles/how-much-does-home-inspection-cost.htm"
+    },
+    {
+      "name": "HomeAdvisor - Home Inspection Cost",
+      "url": "https://www.homeadvisor.com/cost/inspectors-and-appraisers/hire-a-home-inspector/"
+    },
+    {
+      "name": "HomeGuide - How Much Does A Home Inspection Cost?",
+      "url": "https://homeguide.com/costs/home-inspection-cost"
+    },
+    {
+      "name": "Fixr - Home Inspection Cost",
+      "url": "https://www.fixr.com/costs/home-inspection"
+    },
+    {
+      "name": "NerdWallet - What to Expect From a Home Inspection",
+      "url": "https://www.nerdwallet.com/mortgages/learn/home-inspection"
+    },
+    {
+      "name": "NerdWallet - Types of Home Inspections",
+      "url": "https://www.nerdwallet.com/article/mortgages/types-of-home-inspections"
+    },
+    {
+      "name": "Bankrate - How much does a home inspection cost?",
+      "url": "https://www.bankrate.com/real-estate/how-much-does-home-inspection-cost/"
+    },
+    {
+      "name": "Forbes Home - How Much Does Home Inspection Cost? (search excerpt only)",
+      "url": "https://www.forbes.com/home-improvement/home-inspection/home-inspection-cost/"
+    },
+    {
+      "name": "Rocket Mortgage - Home inspection cost (search excerpt only)",
+      "url": "https://www.rocketmortgage.com/learn/home-inspection-cost"
+    },
+    {
+      "name": "Rocket Mortgage - Sewer scope inspection (search excerpt only)",
+      "url": "https://www.rocketmortgage.com/learn/sewer-scope-inspection"
+    },
+    {
+      "name": "BEA - Regional Price Parities by State and Metro Area",
+      "url": "https://www.bea.gov/data/prices-inflation/regional-price-parities-state-and-metro-area"
+    },
+    {
+      "name": "BEA - SARPP state data download",
+      "url": "https://apps.bea.gov/regional/zip/SARPP.zip"
+    },
+    {
+      "name": "BEA - news release, Feb 19 2026",
+      "url": "https://www.bea.gov/news/2026/real-personal-consumption-expenditures-state-and-real-personal-income-state-2024"
+    }
+  ]
+}

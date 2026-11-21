@@ -1,0 +1,4 @@
+test/template.html
+test/shots/
+__pycache__/
+dist/.*.src.js

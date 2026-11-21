@@ -1,0 +1,383 @@
+{
+  "dataset": "Home inspector E&O and general liability premium reference data",
+  "last_checked": "2026-11-21",
+  "notes": "Published figures only. Premiums are quote-based and vary by state, revenue/inspection volume, limits, deductible, endorsements and claims history. State insurance mandates are kept in a separate dataset.",
+  "consensus": {
+    "eo_per_year": {
+      "low": 600,
+      "typical": 1000,
+      "high": 2500,
+      "note": "Rounded summary of the published E&O figures below (biBerk from about $600; Insureon median $989; WINI $1,000-$2,500; InspectorPro $1,200-$2,500, which includes GL)."
+    },
+    "gl_per_year": {
+      "low": 400,
+      "typical": 550,
+      "high": 1000,
+      "note": "Rounded summary of the published GL figures below (Insureon median $545; Insuranceopedia about $600; WINI $400-$1,000)."
+    }
+  },
+  "premiums": [
+    {
+      "name": "Insureon",
+      "url": "https://www.insureon.com/real-estate-business-insurance/home-inspectors/cost",
+      "coverage": "E&O",
+      "low": null,
+      "high": null,
+      "median": 82,
+      "per": "month",
+      "annual_equivalent": 989,
+      "limits": "$1M per occurrence / $1M aggregate",
+      "deductible": 1000,
+      "notes": "Median of policies for home inspectors who applied for quotes through Insureon; most customers have under 5 employees and revenue of about $50k to over $200k. Page updated 2026-11-18.",
+      "verification": "page"
+    },
+    {
+      "name": "Insureon",
+      "url": "https://www.insureon.com/real-estate-business-insurance/home-inspectors/cost",
+      "coverage": "GL",
+      "low": null,
+      "high": null,
+      "median": 45,
+      "per": "month",
+      "annual_equivalent": 545,
+      "limits": "$1M per occurrence / $2M aggregate",
+      "notes": "Median; page updated 2026-11-18.",
+      "verification": "page"
+    },
+    {
+      "name": "Simply Business",
+      "url": "https://www.simplybusiness.com/business-insurance/home-inspector-insurance/",
+      "coverage": "E&O",
+      "low": 26,
+      "high": null,
+      "median": null,
+      "per": "month",
+      "limits": "$100K to $3M available",
+      "notes": "'From' price is the 10th percentile of policies sold Jul-Dec 2025, so it is a floor, not a typical price. Page updated 2026-11-04.",
+      "verification": "page"
+    },
+    {
+      "name": "Simply Business",
+      "url": "https://www.simplybusiness.com/business-insurance/home-inspector-insurance/",
+      "coverage": "GL",
+      "low": 20.75,
+      "high": null,
+      "median": null,
+      "per": "month",
+      "limits": null,
+      "notes": "'From' price is the 10th percentile of policies sold Jul-Dec 2025. BOP from $33.75/month.",
+      "verification": "page"
+    },
+    {
+      "name": "InspectorPro",
+      "url": "https://www.inspectorproinsurance.com/how-much-does-home-inspector-business-insurance-cost/",
+      "coverage": "bundle",
+      "low": 1200,
+      "high": 2500,
+      "median": null,
+      "per": "year",
+      "limits": "$100K/$100K to $1M/$2M offered",
+      "notes": "'Here at InspectorPro, home inspector insurance costs around $1,200-2,500 in annual premium.' Specialist broker; covers E&O and GL.",
+      "verification": "page"
+    },
+    {
+      "name": "biBerk (Berkshire Hathaway)",
+      "url": "https://www.biberk.com/articles/home-inspector-e-and-o-insurance-cost",
+      "coverage": "E&O",
+      "low": 600,
+      "high": null,
+      "median": null,
+      "per": "year",
+      "limits": null,
+      "notes": "'biBerk's home inspector insurance rates start at around $600 per year.' Article first published 2022-08-12.",
+      "verification": "page"
+    },
+    {
+      "name": "Insuranceopedia",
+      "url": "https://www.insuranceopedia.com/business-insurance/home-inspector-insurance-cost",
+      "coverage": "GL",
+      "low": null,
+      "high": null,
+      "median": 50,
+      "per": "month",
+      "limits": "$1M per occurrence / $2M aggregate",
+      "notes": "Average. State examples range from $670/yr (OH) to $750/yr (NY). Comparison site, not a carrier. Updated 2026-07-28.",
+      "verification": "page"
+    },
+    {
+      "name": "Insuranceopedia",
+      "url": "https://www.insuranceopedia.com/business-insurance/home-inspector-insurance-cost",
+      "coverage": "E&O",
+      "low": null,
+      "high": null,
+      "median": 71,
+      "per": "month",
+      "limits": null,
+      "notes": "'Professional liability insurance: $71 per month' (average).",
+      "verification": "page"
+    },
+    {
+      "name": "WIN Home Inspection (franchisor)",
+      "url": "https://wini.com/franchise/home-inspector-insurance-cost/",
+      "coverage": "E&O",
+      "low": 1000,
+      "high": 2500,
+      "median": null,
+      "per": "year",
+      "limits": null,
+      "notes": "'typically costs between $1,000 to $2,500 per year.' Dated 2023-08-21.",
+      "verification": "page"
+    },
+    {
+      "name": "WIN Home Inspection (franchisor)",
+      "url": "https://wini.com/franchise/home-inspector-insurance-cost/",
+      "coverage": "GL",
+      "low": 400,
+      "high": 1000,
+      "median": null,
+      "per": "year",
+      "limits": null,
+      "notes": "Dated 2023-08-21.",
+      "verification": "page"
+    },
+    {
+      "name": "Spectora (citing CoverWallet)",
+      "url": "https://www.spectora.com/r/eo-insurance-cost-home-inspectors/",
+      "coverage": "E&O",
+      "low": 600,
+      "high": 1200,
+      "median": null,
+      "per": "year",
+      "limits": null,
+      "notes": "'$600-$1200/yr range for a basic E&O policy'. Last updated 2022-04-29.",
+      "verification": "page"
+    },
+    {
+      "name": "OREP (via ASHI Reporter)",
+      "url": "https://www.homeinspector.org/?p=11439",
+      "coverage": "E&O",
+      "low": 1250,
+      "high": null,
+      "median": null,
+      "per": "year",
+      "limits": "$100,000 lowest limit",
+      "notes": "HISTORICAL (2008): 'Minimum premiums for the lowest limit levels ($100,000) are hovering around $1,250 before taxes and fees.' Do not use as current pricing.",
+      "verification": "page"
+    }
+  ],
+  "factors": [
+    {
+      "factor": "inspection_volume_revenue",
+      "text": "The more inspections you perform, the more opportunities clients have to sue... By performing more inspections, you increase your exposure, and your premium will be higher.",
+      "source": "https://www.inspectorproinsurance.com/how-much-does-home-inspector-business-insurance-cost/"
+    },
+    {
+      "factor": "inspection_volume_revenue",
+      "text": "The more your home inspection business makes in a year, the more you pay your employees, and the greater the number of inspections you perform, the higher your premium will cost.",
+      "source": "https://www.insureon.com/real-estate-business-insurance/home-inspectors/cost"
+    },
+    {
+      "factor": "limits",
+      "text": "Many providers charge as little as $50 to $300 annually per tier jump in limits.",
+      "low": 50,
+      "high": 300,
+      "per": "year",
+      "source": "https://www.inspectorproinsurance.com/insurance-101/choosing-your-home-inspection-insurance-limits/"
+    },
+    {
+      "factor": "limits",
+      "text": "The higher your coverage limit, the more you'll pay for your policy.",
+      "source": "https://www.thehartford.com/professional-liability-insurance/home-inspectors"
+    },
+    {
+      "factor": "deductible",
+      "text": "For each deductible tier, you may expect to reduce your premium price from 3 to 15 percent. For most inspectors, that's a difference of $50 to $300 annually.",
+      "pct_low": 3,
+      "pct_high": 15,
+      "low": 50,
+      "high": 300,
+      "source": "https://www.inspectorproinsurance.com/insurance-101/home-inspector-insurance-deductible/"
+    },
+    {
+      "factor": "deductible",
+      "text": "Higher coverage limits and lower deductibles will typically increase premium costs.",
+      "source": "https://www.insureon.com/real-estate-business-insurance/home-inspectors/cost"
+    },
+    {
+      "factor": "ancillary_services",
+      "text": "Endorsements for services such as mold or pool/spa each increase home inspector insurance cost by one to 15 percent on top of the regular premium, on average.",
+      "pct_low": 1,
+      "pct_high": 15,
+      "source": "https://www.inspectorproinsurance.com/how-much-does-home-inspector-business-insurance-cost/"
+    },
+    {
+      "factor": "ancillary_services",
+      "text": "Purchasing extra coverage for higher-risk services, such as mold, radon, or termite inspections, can increase your insurance premiums; ancillary services such as radon or water quality testing could also raise costs.",
+      "source": "https://www.insureon.com/real-estate-business-insurance/home-inspectors/cost"
+    },
+    {
+      "factor": "claims_history",
+      "text": "A home inspector with a lengthy list of previous insurance claims will likely pay more.",
+      "source": "https://www.insureon.com/real-estate-business-insurance/home-inspectors/cost"
+    },
+    {
+      "factor": "claims_history",
+      "text": "InterNACHI member program: up to 38% off for education, experience, software, technology, and loss-free history; vanishing deductible of $500 off each claim-free renewal.",
+      "pct_high": 38,
+      "source": "https://www.insurance.nachi.org/"
+    },
+    {
+      "factor": "experience",
+      "text": "Home inspectors with more years of experience will see lower premiums than newer businesses.",
+      "source": "https://www.insureon.com/real-estate-business-insurance/home-inspectors/cost"
+    },
+    {
+      "factor": "state_location",
+      "text": "Location is a rating factor (natural-disaster exposure, crime, foot traffic). Insuranceopedia GL examples run from $670/yr (OH) to $750/yr (NY).",
+      "source": "https://www.insureon.com/real-estate-business-insurance/home-inspectors/cost"
+    },
+    {
+      "factor": "employees",
+      "text": "Inspectors with employees typically face higher costs than solo inspectors; number of employees is a rating factor.",
+      "source": "https://www.inspectorproinsurance.com/how-much-does-home-inspector-business-insurance-cost/"
+    }
+  ],
+  "limit_options": [
+    {
+      "broker": "InspectorPro",
+      "url": "https://www.inspectorproinsurance.com/faqs/",
+      "options": [
+        "$100,000/$100,000",
+        "$300,000/$300,000",
+        "$500,000/$500,000",
+        "$1,000,000/$1,000,000",
+        "$1,000,000/$2,000,000"
+      ],
+      "most_popular": "$1,000,000/$1,000,000",
+      "most_popular_source": "https://www.inspectorproinsurance.com/insurance-101/choosing-your-home-inspection-insurance-limits/",
+      "deductibles_eo": [
+        1500,
+        2500,
+        5000
+      ],
+      "deductibles_gl": [
+        1000
+      ]
+    },
+    {
+      "broker": "InterNACHI member program",
+      "url": "https://www.insurance.nachi.org/",
+      "options": [
+        "$100,000",
+        "$250,000",
+        "$300,000",
+        "$500,000",
+        "$1,000,000",
+        "$1M+ by request"
+      ],
+      "deductibles_eo": [
+        1500,
+        2500,
+        5000,
+        7500,
+        10000
+      ],
+      "notes": "Commercial GL may be included at no additional cost."
+    },
+    {
+      "broker": "ERGO NEXT",
+      "url": "https://www.nextinsurance.com/business/home-inspectors-insurance/cost",
+      "packages": [
+        {
+          "name": "Basic",
+          "gl_per_occurrence": "$500,000",
+          "eo_per_occurrence": "$250,000"
+        },
+        {
+          "name": "Pro (most popular)",
+          "gl_per_occurrence": "$1,000,000",
+          "eo_per_occurrence": "$1,000,000"
+        },
+        {
+          "name": "Pro Plus",
+          "gl_per_occurrence": "$1,000,000",
+          "eo_per_occurrence": "$2,000,000"
+        }
+      ],
+      "notes": "No prices published on the page."
+    },
+    {
+      "broker": "Simply Business",
+      "url": "https://www.simplybusiness.com/business-insurance/home-inspector-insurance/",
+      "options": [
+        "$100K to $3M (E&O)"
+      ]
+    },
+    {
+      "broker": "OREP (historical, via ASHI Reporter 2008)",
+      "url": "https://www.homeinspector.org/?p=11439",
+      "options": [
+        "$100,000 lowest limit level"
+      ]
+    }
+  ],
+  "limit_options_note": "The $100k/$300k and $250k/$500k pairings in the brief were not found as published menus from a current broker; the options listed are as each broker publishes them.",
+  "sources": [
+    {
+      "name": "Insureon - Home inspector insurance cost",
+      "url": "https://www.insureon.com/real-estate-business-insurance/home-inspectors/cost"
+    },
+    {
+      "name": "Simply Business - Building & home inspector insurance",
+      "url": "https://www.simplybusiness.com/business-insurance/home-inspector-insurance/"
+    },
+    {
+      "name": "InspectorPro - What does home inspector insurance cost?",
+      "url": "https://www.inspectorproinsurance.com/how-much-does-home-inspector-business-insurance-cost/"
+    },
+    {
+      "name": "InspectorPro - FAQs",
+      "url": "https://www.inspectorproinsurance.com/faqs/"
+    },
+    {
+      "name": "InspectorPro - Choosing insurance limits",
+      "url": "https://www.inspectorproinsurance.com/insurance-101/choosing-your-home-inspection-insurance-limits/"
+    },
+    {
+      "name": "InspectorPro - Deductibles explained",
+      "url": "https://www.inspectorproinsurance.com/insurance-101/home-inspector-insurance-deductible/"
+    },
+    {
+      "name": "biBerk - Home inspector E&O insurance cost",
+      "url": "https://www.biberk.com/articles/home-inspector-e-and-o-insurance-cost"
+    },
+    {
+      "name": "Insuranceopedia - Home inspector insurance cost",
+      "url": "https://www.insuranceopedia.com/business-insurance/home-inspector-insurance-cost"
+    },
+    {
+      "name": "WIN Home Inspection - Home inspector insurance cost",
+      "url": "https://wini.com/franchise/home-inspector-insurance-cost/"
+    },
+    {
+      "name": "ERGO NEXT - Home inspector insurance cost",
+      "url": "https://www.nextinsurance.com/business/home-inspectors-insurance/cost"
+    },
+    {
+      "name": "The Hartford - Professional liability for home inspectors",
+      "url": "https://www.thehartford.com/professional-liability-insurance/home-inspectors"
+    },
+    {
+      "name": "InterNACHI insurance program",
+      "url": "https://www.insurance.nachi.org/"
+    },
+    {
+      "name": "ASHI Reporter - Inspectors E&O Insurance: Prices Drop (2008)",
+      "url": "https://www.homeinspector.org/?p=11439"
+    },
+    {
+      "name": "Spectora - E&O insurance cost for home inspectors",
+      "url": "https://www.spectora.com/r/eo-insurance-cost-home-inspectors/"
+    }
+  ]
+}
