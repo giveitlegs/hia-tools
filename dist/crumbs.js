@@ -1,4 +1,4 @@
-/* Inspector Atlas breadcrumbs v3: Atlas > State > City (> Service) on flat category URLs and listings. */
+/* Inspector Atlas breadcrumbs v4: Home Inspectors > State > City (> Service) on flat category URLs and listings. */
 (function(){
 var SITE=location.origin,MAP=null,DONE=false;
 function slugOf(h){try{var u=new URL(h,SITE);if(u.origin!==SITE)return null;var s=u.pathname.split("/").filter(Boolean);return s.length===1?s[0]:null}catch(e){return null}}
@@ -31,7 +31,7 @@ function apply(){
    try{var o=JSON.parse(sc.textContent);if(o["@type"]!=="BreadcrumbList")return;var it=o.itemListElement||[];if(it.length<2)return;
     var mid=trail.map(function(k){return{"@type":"ListItem",name:MAP.l[k]||k,item:SITE+"/"+k+"/"}});
     o.itemListElement=[it[0]].concat(mid,[it[it.length-1]]);o.itemListElement.forEach(function(x,p){x.position=p+1});
-    o.itemListElement[0].name="Atlas";sc.textContent=JSON.stringify(o)}catch(e){}});
+    o.itemListElement[0].name="Home Inspectors";sc.textContent=JSON.stringify(o)}catch(e){}});
   return;
  }
  rootLD();
@@ -43,7 +43,7 @@ function apply(){
 }
 function rootLD(){[].forEach.call(document.querySelectorAll('script[type="application/ld+json"]'),function(sc){
   try{var o=JSON.parse(sc.textContent);if(o["@type"]!=="BreadcrumbList")return;var it=o.itemListElement||[];
-   if(it[0]&&it[0].name!=="Atlas"){it[0].name="Atlas";sc.textContent=JSON.stringify(o)}}catch(e){}})}
+   if(it[0]&&it[0].name!=="Home Inspectors"){it[0].name="Home Inspectors";sc.textContent=JSON.stringify(o)}}catch(e){}})}
 function fixLD(target,chain,afterTarget){
  /* schema: rewrite the platform BreadcrumbList in place */
  [].forEach.call(document.querySelectorAll('script[type="application/ld+json"]'),function(sc){
@@ -53,7 +53,7 @@ function fixLD(target,chain,afterTarget){
    if(it.some(function(x){return chain.indexOf(slugOf(x.item))>=0}))return;
    var add=chain.map(function(k){return{"@type":"ListItem",name:MAP.l[k]||k,item:SITE+"/"+k+"/"}});
    it.splice.apply(it,[idx,0].concat(add));it.forEach(function(x,p){x.position=p+1});
-   if(it[0])it[0].name="Atlas";sc.textContent=JSON.stringify(o)}catch(e){}
+   if(it[0])it[0].name="Home Inspectors";sc.textContent=JSON.stringify(o)}catch(e){}
  });
 }
 function load(){if(MAP){apply();return}
