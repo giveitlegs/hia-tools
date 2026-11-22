@@ -13,7 +13,7 @@
 .hia-field{display:flex;flex-direction:column;gap:4px;min-width:0}
 .hia-field label{font-weight:600;font-size:14px}
 .hia-hint{color:var(--m);font-size:12.5px}
-.hia-tool input[type=number],.hia-tool input[type=text],.hia-tool input[type=date],.hia-tool input[type=search],.hia-tool select,.hia-tool textarea{
+.hia-tool input[type=number],.hia-tool input[type=text],.hia-tool input[type=date],.hia-tool input[type=search],.hia-tool input[type=tel],.hia-tool input[type=email],.hia-tool input[type=url],.hia-tool input[type=time],.hia-tool select,.hia-tool textarea{
  width:100%;min-height:44px;padding:9px 11px;border:1px solid #C9C6BD;border-radius:8px;background:#fff;color:var(--k);font:inherit;font-size:16px}
 .hia-tool textarea{min-height:88px;resize:vertical}
 .hia-tool input:focus-visible,.hia-tool select:focus-visible,.hia-tool textarea:focus-visible,.hia-tool button:focus-visible,.hia-tool a:focus-visible,.hia-tool summary:focus-visible,.hia-tool [tabindex]:focus-visible{

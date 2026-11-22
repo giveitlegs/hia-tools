@@ -240,5 +240,93 @@
   },
   "seo_dropped": false,
   "err": null
+ },
+ "home-inspection-form": {
+  "code": 201,
+  "id": 4203,
+  "url": "https://homeinspectoratlas.com/pages/home-inspection-form/",
+  "seo": {
+   "id": 1571049,
+   "title": "Home Inspection Report Form Template (Free, Printable)",
+   "description": "Free home inspection report form template. Print a blank form or fill it in on screen, rate each item IN, NI, NP or D, then download PDF, Word or Excel.",
+   "keywords": null,
+   "og_title": null,
+   "og_description": null,
+   "og_image": null,
+   "twitter_title": null,
+   "twitter_description": null,
+   "twitter_image": null,
+   "canonical": null,
+   "created_at": "2026-11-22T17:15:56.000000Z",
+   "updated_at": "2026-11-22T17:15:56.000000Z"
+  },
+  "seo_dropped": false,
+  "err": null
+ },
+ "home-inspection-contract": {
+  "code": 201,
+  "id": 4204,
+  "url": "https://homeinspectoratlas.com/pages/home-inspection-contract/",
+  "seo": {
+   "id": 1571050,
+   "title": "Home Inspection Contract Template | Inspector Atlas",
+   "description": "Free home inspection contract and pre-inspection agreement template. Add your fee, scope and clauses, check your state's notes, then print or download it.",
+   "keywords": null,
+   "og_title": null,
+   "og_description": null,
+   "og_image": null,
+   "twitter_title": null,
+   "twitter_description": null,
+   "twitter_image": null,
+   "canonical": null,
+   "created_at": "2026-11-22T17:15:57.000000Z",
+   "updated_at": "2026-11-22T17:15:57.000000Z"
+  },
+  "seo_dropped": false,
+  "err": null
+ },
+ "home-inspection-invoice-template": {
+  "code": 201,
+  "id": 4205,
+  "url": "https://homeinspectoratlas.com/pages/home-inspection-invoice-template/",
+  "seo": {
+   "id": 1571051,
+   "title": "Home Inspection Invoice Template | Inspector Atlas",
+   "description": "Free home inspection invoice template. Add your services, add-on tests, discounts and tax, then print, save a PDF or download a Word or spreadsheet copy.",
+   "keywords": null,
+   "og_title": null,
+   "og_description": null,
+   "og_image": null,
+   "twitter_title": null,
+   "twitter_description": null,
+   "twitter_image": null,
+   "canonical": null,
+   "created_at": "2026-11-22T17:15:57.000000Z",
+   "updated_at": "2026-11-22T17:15:57.000000Z"
+  },
+  "seo_dropped": false,
+  "err": null
+ },
+ "home-inspector-website-template": {
+  "code": 201,
+  "id": 4206,
+  "url": "https://homeinspectoratlas.com/pages/home-inspector-website-template/",
+  "seo": {
+   "id": 1571052,
+   "title": "Home Inspector Website Template | Inspector Atlas",
+   "description": "Free home inspector website template. Add your services, prices and service area, preview it on desktop and phone, and download a ready-to-upload site.",
+   "keywords": null,
+   "og_title": null,
+   "og_description": null,
+   "og_image": null,
+   "twitter_title": null,
+   "twitter_description": null,
+   "twitter_image": null,
+   "canonical": null,
+   "created_at": "2026-11-22T17:15:58.000000Z",
+   "updated_at": "2026-11-22T17:15:58.000000Z"
+  },
+  "seo_dropped": false,
+  "err": null
  }
 }

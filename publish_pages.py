@@ -8,7 +8,7 @@ KEY = envload.load().get("directify_API", "")
 DIR = 5775
 ROOT = pathlib.Path(__file__).parent
 API = f"https://directify.app/api/directories/{DIR}/pages"
-VERSION = "v1.1.0"
+VERSION = "v1.1.1"
 CDN = f"https://cdn.jsdelivr.net/gh/giveitlegs/hia-tools@{VERSION}/dist/"
 # Tools added after v1.0.0 are not in the custom-code loader (#1405). Directify markdown escapes <script>, so these pages
 # carry their own mount point + a 1px data-GIF whose onload attaches the bundle. If the loader map is ever extended
@@ -67,7 +67,7 @@ def curl(method, url, payload=None):
 def rows():
     m = {}
     for r in csv.DictReader(open(ROOT.parent / "data" / "processed" / "url_map.csv", encoding="utf-8")):
-        if r["page_type"] == "tool": m[r["url_slug"].strip("/")] = r
+        if r["page_type"] == "tool": m[r["url_slug"].strip("/").split("/")[-1]] = r
     return m
 
 if __name__ == "__main__":
