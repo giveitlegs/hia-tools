@@ -14,7 +14,20 @@ TOOLS = {  # bundle: (page slug, data files)
     "contingency": ("inspection-contingency-calculator", ["contingency"]),
     "repair":      ("repair-request-letter", ["contingency", "repair"]),
     "report":      ("sample-home-inspection-report", ["report"]),
+    "form":        ("home-inspection-form", ["form"]),
+    "contract":    ("home-inspection-contract", []),
+    "invoice":     ("home-inspection-invoice-template", ["cost"]),
+    "website":     ("home-inspector-website-template", ["cost"]),
 }
+HUB = ("hub", "resources")  # src/hub.{css,js} -> dist/resources.{css,js}; no core, markup is server-rendered in the page
+
+def build_hub():
+    src, name = HUB
+    for ext in ("css", "js"):
+        out = ROOT / "dist" / f"{name}.{ext}"
+        subprocess.run(f'npx --yes esbuild@0.24.0 "{ROOT / "src" / (src + "." + ext)}" --minify --target=es2017 --charset=utf8 --outfile="{out}" --log-level=warning',
+                       shell=True, check=True, cwd=ROOT)
+        print(f"{name}.{ext:4s} {out.stat().st_size/1024:6.1f} KB")
 
 def faqs(slug):
     p = ROOT / "pages" / f"{slug}.md"
@@ -112,4 +125,5 @@ if __name__ == "__main__":
     for name in EXTERNAL:
         d = slim(name, json.loads((ROOT / "data" / f"{name}.json").read_text(encoding="utf-8")))
         (ROOT / "dist" / f"{name}.json").write_text(json.dumps(d, separators=(",", ":"), ensure_ascii=False), encoding="utf-8")
-    for t in (sys.argv[1:] or TOOLS): build(t)
+    for t in (sys.argv[1:] or list(TOOLS) + ["hub"]):
+        build_hub() if t == "hub" else build(t)

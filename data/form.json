@@ -1,0 +1,28 @@
+{
+ "last_checked": "2026-11-22",
+ "note": "Section and component list follows the systems named in the InterNACHI and ASHI standards of practice. Original wording by Inspector Atlas.",
+ "sources": [
+  {"name": "InterNACHI Home Inspection Standards of Practice", "url": "https://www.nachi.org/sop.htm"},
+  {"name": "ASHI Standard of Practice for Home Inspections", "url": "https://www.homeinspector.org/standards-of-practice"}
+ ],
+ "ratings": [["IN", "Inspected", "Inspected and functioning as intended at the time of inspection"], ["NI", "Not inspected", "Not inspected; reason stated in comments"], ["NP", "Not present", "Component not present"], ["D", "Deficient", "Deficient; see comments for the defect and recommendation"]],
+ "sections": [
+  {"k": "roof", "t": "Roof", "on": true, "items": ["Roof covering", "Flashing", "Skylights, chimneys and roof penetrations", "Gutters and downspouts", "Method used to inspect the roof"]},
+  {"k": "ext", "t": "Exterior", "on": true, "items": ["Wall cladding, trim and flashing", "Exterior doors", "Windows", "Decks, balconies, porches and steps", "Railings and guards", "Eaves, soffits and fascia", "Grading, drainage and vegetation", "Walkways, driveways and patios", "Retaining walls"]},
+  {"k": "str", "t": "Structure and foundation", "on": true, "items": ["Foundation type and condition", "Basement or crawlspace", "Floor structure", "Wall structure", "Ceiling and roof structure", "Evidence of moisture or water intrusion", "Wood-destroying insect evidence (report only)"]},
+  {"k": "att", "t": "Attic, insulation and ventilation", "on": true, "items": ["Attic access", "Insulation type and approximate depth", "Attic ventilation", "Vapor retarders", "Exhaust fans vent to exterior", "Crawlspace ventilation"]},
+  {"k": "ele", "t": "Electrical", "on": true, "items": ["Service drop or lateral", "Service entrance conductors", "Main panel and main disconnect", "Subpanels", "Overcurrent devices (breakers, fuses)", "Branch circuit wiring type", "Grounding and bonding", "GFCI protection", "AFCI protection", "Representative outlets, switches and fixtures", "Smoke and carbon monoxide alarms"]},
+  {"k": "plu", "t": "Plumbing", "on": true, "items": ["Main water shut-off location", "Water supply and distribution piping", "Drain, waste and vent piping", "Fixtures and faucets", "Functional flow and drainage", "Fuel storage and distribution", "Main fuel shut-off location", "Sump pump", "Sewage ejector"]},
+  {"k": "wh", "t": "Water heater", "on": true, "items": ["Type, fuel and capacity", "Approximate age", "Temperature and pressure relief valve and discharge pipe", "Venting", "Seismic strapping (where required)"]},
+  {"k": "hv", "t": "Heating and cooling", "on": true, "items": ["Heating system type and fuel", "Heating operation (normal controls)", "Cooling system type", "Cooling operation and temperature split", "Distribution (ducts, registers, piping)", "Filters", "Vent connectors and flues", "Condensate drainage", "Thermostat"]},
+  {"k": "fp", "t": "Fireplaces and fuel-burning appliances", "on": true, "items": ["Fireplace or stove type", "Firebox and damper", "Hearth extension", "Chimney and flue (readily visible parts)", "Gas logs and fuel lines"]},
+  {"k": "int", "t": "Interior", "on": true, "items": ["Walls, ceilings and floors", "Interior doors", "Stairs, handrails and guards", "Representative windows", "Countertops and representative cabinets", "Signs of water stains or leaks"]},
+  {"k": "kit", "t": "Kitchen and built-in appliances", "on": true, "items": ["Range, cooktop and oven", "Dishwasher", "Food waste disposer", "Range hood or exhaust", "Built-in microwave", "Refrigerator (if included)"]},
+  {"k": "bath", "t": "Bathrooms", "on": true, "items": ["Sinks, toilets, tubs and showers", "Tile, grout and caulking", "Exhaust fans", "Water pressure and drainage"]},
+  {"k": "gar", "t": "Garage", "on": true, "items": ["Garage vehicle door", "Automatic opener and auto-reverse", "Fire separation wall and door to the house", "Garage floor and slab", "Garage electrical"]},
+  {"k": "lau", "t": "Laundry", "on": false, "items": ["Washer connections and drain", "Dryer vent", "Laundry area ventilation"]},
+  {"k": "pool", "t": "Pool and spa", "on": false, "items": ["Pool or spa type", "Barrier, gates and alarms", "Pumps, filters and heater", "Bonding and GFCI", "Visible plumbing and surfaces"]},
+  {"k": "anc", "t": "Ancillary services", "on": false, "items": ["Radon test", "Sewer scope", "Termite / WDO inspection", "Mold sampling", "Well water test", "Septic inspection", "Infrared / thermal scan"]}
+ ],
+ "limitations": "This inspection is a visual, non-invasive examination of the readily accessible systems and components of the home at the time of inspection. It is not a code compliance inspection, a warranty or a guarantee. Items concealed by finishes, stored belongings, weather or furnishings were not inspected. Follow the recommendations in this report and have qualified, licensed contractors evaluate and repair deficiencies before closing."
+}
