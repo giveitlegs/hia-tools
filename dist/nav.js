@@ -87,7 +87,11 @@
     ".hia-m .hia-sub{padding-left:12px;border-left:2px solid #F5F0E6;margin:0 0 6px 16px}",
     ".hia-m .hia-sub a{padding:9px 12px;font-size:.85rem}",
     ".hia-m .hia-gt{padding:10px 12px 2px}",
-    ".hia-m .hia-mclaim{margin:14px 4px 0;display:flex;justify-content:center}",
+    ".hia-m .hia-mclaim{margin:18px 4px 0;display:flex;justify-content:center}",
+    ".hia-m a.hia-claim{display:inline-flex;padding:11px 20px;font-size:.9rem;color:#fff}",
+    ".hia-m a.hia-claim:hover{background:linear-gradient(120deg,#3540A0 0%,#0E7C6B 100%);color:#fff}",
+    ".hia-m .hia-claim .hia-long{display:inline}.hia-m .hia-claim .hia-short{display:none}",
+    ".hia-dd.right .hia-panel{min-width:340px}",
     /* reveal the platform nav only once rebuilt (falls back to visible after 1.5s if this script fails) */
     "header nav.lg\\:flex.hia-ready{opacity:1!important;animation:none!important}"
   ].join("\n");
