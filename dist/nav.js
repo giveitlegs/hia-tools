@@ -45,7 +45,7 @@
   var CLAIM = { label: "Claim Your Listing", short: "Claim Listing", href: "/pages/claim-your-listing/" };
 
   var CSS = [
-    ".hia-nav{display:flex;align-items:center;gap:2px}",
+    "@media (min-width:1024px){.hia-nav{display:flex;align-items:center;gap:2px}}",
     ".hia-dd{position:relative}",
     ".hia-top{display:inline-flex;align-items:center;gap:4px;padding:8px 11px;font-size:.875rem;font-weight:500;color:rgba(27,32,48,.72);border-radius:8px;white-space:nowrap;background:none;border:0;cursor:pointer;text-decoration:none;transition:color .15s,background .15s}",
     ".hia-top:hover,.hia-dd:focus-within>.hia-top,.hia-dd.open>.hia-top{color:#3540A0;background:rgba(53,64,160,.07)}",
