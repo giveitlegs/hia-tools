@@ -7,7 +7,7 @@
     { label: "Home Inspector Reviews", href: "/" },
     { label: "Map", href: "/map/" },
     { label: "Resources", href: "/pages/resources/", wide: true, groups: [
-      { title: "For home buyers", items: [
+      { title: "For buyers, sellers & agents", items: [
         ["Home Inspection Cost Calculator", "/pages/home-inspection-cost/"],
         ["Home Inspection Checklist", "/pages/home-inspection-checklist/"],
         ["What Home Inspectors Look For", "/pages/what-do-home-inspectors-look-for/"],
@@ -18,6 +18,10 @@
         ["4-Point & Wind Mitigation Savings", "/pages/4-point-wind-mitigation-calculator/"]
       ]},
       { title: "For home inspectors", items: [
+        ["Home Inspection Report Form", "/pages/home-inspection-form/"],
+        ["Home Inspection Contract", "/pages/home-inspection-contract/"],
+        ["Home Inspection Invoice Template", "/pages/home-inspection-invoice-template/"],
+        ["Home Inspector Website Template", "/pages/home-inspector-website-template/"],
         ["License Requirements by State", "/pages/home-inspector-license-requirements/"],
         ["Home Inspector Salary by State", "/pages/home-inspector-salary/"],
         ["Insurance Cost Estimator", "/pages/home-inspector-insurance/"],
@@ -76,7 +80,7 @@
     "@keyframes hiaDot{0%{box-shadow:0 0 0 0 rgba(240,178,62,.8)}70%{box-shadow:0 0 0 7px rgba(240,178,62,0)}100%{box-shadow:0 0 0 0 rgba(240,178,62,0)}}",
     "@media (max-width:1023px){.hia-claim .hia-long{display:none}.hia-claim{padding:8px 13px;font-size:.8rem}}",
     "@media (min-width:1024px){.hia-claim .hia-short{display:none}}",
-    "@media (max-width:380px){.hia-claim .hia-short{display:none}.hia-claim{padding:9px}}",
+    "@media (max-width:420px){.hia-claim .hia-short{font-size:0}.hia-claim .hia-short:after{content:'Claim';font-size:.8rem}}",
     "@media (prefers-reduced-motion:reduce){.hia-claim:after,.hia-claim-wrap:before,.hia-claim-wrap:after,.hia-dot{animation:none}.hia-panel,.hia-car{transition:none}}",
     /* mobile drawer */
     ".hia-m a,.hia-m summary{display:block;padding:12px 16px;font-size:.9rem;font-weight:500;color:rgba(27,32,48,.8);border-radius:10px;text-decoration:none;cursor:pointer;list-style:none}",
